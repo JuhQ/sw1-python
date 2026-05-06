@@ -1,12 +1,8 @@
 # Ulkoisen rajapinnan käyttö
 
-Tässä moduulissa opit käyttämään ulkoisia ohjelmointirajapintoja, joiden avulla tietokoneet voivat
-vaihtaa tietoja keskenään.
+Tässä moduulissa opit käyttämään ulkoisia ohjelmointirajapintoja, joiden avulla tietokoneet voivat vaihtaa tietoja keskenään.
 
-Internetin julkiset palveluntarjoajat kuten sääpalvelut ja avoimet tietokantapalvelut antavat mahdollisuuden
-käyttää niitä ohjelmallisesti. Tuo ohjelmallinen käyttö tapahtuu niin kutsutun ohjelmointirajapinnan kautta.
-Palveluntarjoaja päättää, millaisen ohjelmointirajapinnan se tarjoaa ja miten sitä käytetään. Rajapinnan
-käyttö edellyttääkin aina rajapinnan dokumentaatioon perehtymistä.
+Internetin julkiset palveluntarjoajat kuten sääpalvelut ja avoimet tietokantapalvelut antavat mahdollisuuden käyttää niitä ohjelmallisesti. Tuo ohjelmallinen käyttö tapahtuu niin kutsutun ohjelmointirajapinnan kautta. Palveluntarjoaja päättää, millaisen ohjelmointirajapinnan se tarjoaa ja miten sitä käytetään. Rajapinnan käyttö edellyttääkin aina rajapinnan dokumentaatioon perehtymistä.
 
 ## Tiedon siirto Internetissä
 
