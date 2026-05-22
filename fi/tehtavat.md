@@ -2,14 +2,20 @@
 
 Jokaiseen moduuliin liittyvistä tehtävistä saa yhteensä 6 pistettä. Yhden tehtävän pistearvo saadaan jakamalla se tehtävien lukumäärällä.
 
-## 1. Ensimmäinen ohjelma ja versionhallinnan käyttöönotto
+Projektiin liittyvät tehtävät arvioidaan osana projektia, niistä voi saada pisteitä projektiin vain ajoissa palautettuna.
 
-1. Asenna PyCharm-kehitin. Kirjoita ohjelma, joka tervehtii sinua omalla nimelläsi.
+---
+
+## 1 ja 2. Ensimmäinen ohjelma ja versionhallinnan käyttöönotto
+
+1. Asenna kehitysympäristö. Kirjoita ohjelma, joka tervehtii sinua omalla nimelläsi.
 Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
-2. Luo itsellesi GitHub-käyttäjätili ja tee repositorio Python-harjoitustehtäviä varten. Määritä  PyCharm käyttämään repositoriota harjoitustehtäväprojektin tietojen tallentamiseen. Varmista, että voit hakea, sitouttaa ja työntää tekemiäsi muutoksia (*pull*, *commit*, *push*).
+2. Luo itsellesi GitHub-käyttäjätili ja tee repositorio Python-harjoitustehtäviä varten. Määritä oma paikallinen projektisi käyttämään repositoriota harjoitustehtäväprojektin etärepositoriona. Varmista, että voit hakea, sitouttaa ja työntää tekemiäsi muutoksia (*pull*, *commit*, *push*).
 
-## 2. Muuttujat ja vuorovaikutteiset ohjelmat
+---
+
+## 3. Muuttujat ja vuorovaikutteiset ohjelmat
 
 1. Kirjoita ohjelma, joka kysyy nimesi ja sen jälkeen tervehtii sinua omalla nimelläsi. Esimerkkejä:
    - Jos syötät nimeksesi Viivi, ohjelma tervehtii sinua sanoin `Terve, Viivi!`
@@ -48,7 +54,14 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
    Vihje: tutustu `random.randint()`-funktion käyttöön.
 
-## 3. Valintarakenne (if)
+### Projekti 1. Ohjelmointiprojektitehtävän aloitus
+
+   - Luo pelille oma kansio Python-harjoitusprojektin sisälle `peliprojekti/` ja sen sisälle `readme.md`-tiedosto. Lisää tiedostoon otsikoksi pelisi nimi ja alle oma nimesi.
+   - Tee kansioon ohjelma, joka kysyy pelaajan nimen ja iän, tallentaa nämän muuttujiin ja tulostaa konsoliin.
+
+---
+
+## 4. Valintarakenne (if)
 
 1. Kirjoita ohjelma, joka kysyy kalastajalta kuhan pituuden senttimetreinä. Jos kuha on alamittainen, ohjelma käskee laskea kuhan takaisin järveen ilmoittaen samalla käyttäjälle, montako senttiä alimmasta sallitusta pyyntimitasta puuttuu. Kuha on alamittainen, jos sen pituus on alle 37 cm.
 
@@ -66,7 +79,9 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 4. Kirjoita ohjelma, joka kysyy vuosiluvun ja ilmoittaa, onko annettu vuosi karkausvuosi. Vuosi on karkausvuosi, jos se on jaollinen neljällä. Sadalla jaolliset vuodet ovat karkausvuosia vain jos ne ovat jaollisia myös neljälläsadalla.
 
-## 4. Alkuehdollinen toistorakenne (while)
+---
+
+## 5. Alkuehdollinen toistorakenne (while)
 
 1. Kirjoita `while`-toistorakennetta käyttävä ohjelma, joka tulostaa kolmella jaolliset luvut väliltä 1..1000.
 
@@ -80,7 +95,15 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 6. Toteutetaan algoritmi piin (π) likiarvon laskemiseksi. Oletetaan, että A on yksikköympyrä eli ympyrä, jonka keskipiste on origossa ja jonka säde on yksi. Sen ympärille piirretään pienin mahdollinen neliö B siten, että ympyrä A jää kokonaan neliön sisäpuolelle. Neliön nurkkapisteet ovat tällöin (-1,-1), (1,-1), (1,1) ja (-1,1). Jos neliön sisälle arvotaan satunnaisesti suuri määrä pisteitä, osuu niistä myös ympyrän sisälle likimain niin suuri osuus kuin ympyrän pinta-ala on neliön pinta-alasta eli πr^2/4, joka (koska ympyrän säde on yksi) sievenee muotoon *π/4*. Tästä saadaan yksinkertainen menetelmä piin likiarvon laskemiseksi: Arvotaan neliön B sisälle suuri määrä satunnaisissa kohdissa olevia pisteitä, esimerkiksi miljoona. Olkoon N tämä pisteiden kokonaismäärä. Jokaisesta neliön B sisään arvotusta pisteestä testataan vuorollaan, jääkö se myös yksikköympyrän A sisälle. Olkoon n ympyrän sisälle jäävien pisteiden kokonaismäärä. Nyt pätee n/N≈π/4, josta saadaan π≈4n/N. Kirjoita ohjelma, joka kysyy arvottavien pisteiden määrän käyttäjältä ja toteuttaa piin likiarvon laskennan edellä kuvatulla menetelmällä. Lopuksi ohjelma tulostaa piin likiarvon käyttäjälle. (Huomaa, että jokaisesta arvotusta pisteestä (x, y) on helppoa testata onko se yksikköympyrän A sisällä: riittää testata, toteuttaako piste epäyhtälön *x^2+y^2<1*.)
 
-## 5. Listarakenne ja läpikäyvä toistorakenne (for)
+### Projekti 2. Päävalikko 
+
+Muokkaa peliprojektiohjelmaa niin, että jos käyttäjä syöttää iän, joka on alle 12 v., ohjelma ilmoittaa alaikäisyydestä ja sammuu. Muussa tapauksessa ohjelma tervehtii käyttäjää, tulostaa päävalikon ja kysyy komentoja, kunnes käyttäjä kirjoittaa "lopeta".
+
+Lisää muutama keksitty komento, jotka antavat keskenään erilaisen tulosteen konsoliin. Komennon jälkeen tulostetaan valikko aina uudelleen.
+
+---
+
+## 6. Listarakenne ja läpikäyvä toistorakenne (for)
 
 1. Kirjoita ohjelma, joka kysyy käyttäjältä arpakuutioiden lukumäärän. Ohjelma heittää kerran kaikkia arpakuutioita ja tulostaa silmälukujen summan. Käytä `for`-toistorakennetta.
 
@@ -92,7 +115,9 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 4. Kirjoita ohjelma, joka kysyy käyttäjältä viiden kaupungin nimet yksi kerrallaan (käytä `for`-toistorakennetta nimien kysymiseen) ja tallentaa ne listarakenteeseen. Lopuksi ohjelma tulostaa kaupunkien nimet yksi kerrallaan allekkain samassa järjestyksessä kuin ne syötettiin. käytä `for`-toistorakennetta nimien kysymiseen ja `for/in` toistorakennetta niiden läpikäymiseen.
 
-## 6. Funktio
+---
+
+## 7. Funktio
 
 1. Kirjoita parametriton funktio, joka palauttaa paluuarvonaan satunnaisen nopan silmäluvun väliltä 1..6. Kirjoita pääohjelma, joka heittää noppaa niin kauan kunnes tulee kuutonen. Pääohjelma tulostaa kunkin heiton jälkeen saadun silmäluvun.
 
@@ -107,7 +132,13 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 6. Kirjoita funktio, joka saa parametreinaan pyöreän pizzan halkaisijan senttimetreinä sekä pizzan hinnan euroina. Funktio laskee ja palauttaa pizzan yksikköhinnan euroina per neliömetri. Pääohjelma kysyy käyttäjältä kahden pizzan halkaisijat ja hinnat sekä ilmoittaa, kumpi pizza antaa paremman vastineen rahalle (eli kummalla on alhaisempi yksikköhinta). Yksikköhintojen laskennassa on hyödynnettävä kirjoitettua funktiota.
 
-## 7. Monikko, joukko ja sanakirja
+### Projekti 3. Päävalikon toiminnot ja "inventaario"
+
+Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (vähintään 3) oma **funktio**, joka suoritetaan, kun käyttäjä valitsee kyseisen toiminnon. Yhden funktion pitää kysyä käyttäjältä asioita (esim. esine), jotka lisätään listamuuttujaan. Toisen funktion pitää tulostaa listan sisältö käyttäjälle. Muut toiminnot voi ideoida ja toteuttaa vapaasti.
+
+---
+
+## 8. Monikko, joukko ja sanakirja
 
 1. Kirjoita ohjelma, joka kysyy käyttäjältä kuukauden numeron, jonka jälkeen ohjelma tulostaa sitä vastaavan vuodenajan (`kevät`, `kesä`, `syksy`, `talvi`). Tallenna ohjelmassasi kuukausia vastaavat vuodenajat merkkijonoina monikkotietorakenteeseen. Määritellään kukin vuodenaika kolmen kuukauden mittaiseksi siten, että joulukuu on ensimmäinen talvikuukausi.
 
@@ -115,18 +146,7 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 3. Kirjoita ohjelma lentoasematietojen hakemiseksi ja tallentamiseksi. Ohjelma kysyy käyttäjältä, haluaako tämä syöttää uuden lentoaseman, hakea jo syötetyn lentoaseman tiedot vai  lopettaa. Jos käyttäjä valitsee uuden lentoaseman syöttämisen, ohjelma kysyy käyttäjältä lentoaseman ICAO-koodin ja nimen. Jos käyttäjä valitsee haun, ohjelma kysyy ICAO-koodin ja tulostaa sitä vastaavan lentoaseman nimen. Jos käyttäjä haluaa lopettaa, ohjelman suoritus päättyy. Käyttäjä saa valita uuden toiminnon miten monta kertaa tahansa aina siihen asti, kunnes hän haluaa lopettaa. (ICAO-koodi on lentoaseman yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK. Löydät koodeja helposti selaimen avulla.)
 
-## 8. Relaatiotietokannan käyttö
-
-1. Kirjoita ohjelma, joka kysyy käyttäjältä lentoaseman ICAO-koodin. Ohjelma hakee ja tulostaa koodia vastaavan lentokentän nimen ja sen sijaintikunnan kurssilla käytettävästä lentokenttätietokannasta. ICAO-koodi on tallennettuna airport-taulun ident-sarakkeeseen.
-
-2. Kirjoita ohjelma, joka kysyy käyttäjältä maakoodin (esimerkiksi `FI`) ja tulostaa kyseisessä maassa olevien lentokenttien lukumäärät tyypeittäin. Esimerkiksi Suomen osalta tuloksena on saatava tieto siitä, että pieniä lentokenttiä on 65 kappaletta, helikopterikenttiä on 15 kappaletta jne.
-
-3. Kirjoita ohjelma, joka kysyy käyttäjältä kahden lentokentän ICAO-koodit. Ohjelma ilmoittaa lentokenttien välisen etäisyyden kilometreinä. Laskenta perustuu tietokannasta haettuihin koordinaatteihin. Laske etäisyys `geopy`-kirjaston avulla: <https://geopy.readthedocs.io/en/stable/>.
-
-   Kirjaston asennus:
-
-   - PyCharm: valitse **View / Tool Windows / Python Packages**. Kirjoita hakukenttään `geopy` ja vie asennus loppuun.
-   - Visual Studio Code: avaa terminaali ja kirjoita komento `python -m pip install geopy`.
+---
 
 ## 9. Luokka, olio, alustaja
 
@@ -140,6 +160,8 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
    - Jokaisen auton nopeutta muutetaan siten, että nopeuden muutos arvotaan väliltä -10 ja +15 km/h väliltä. Tämä tehdään kutsumalla `kiihdytä`-metodia.
    - Kaikkia autoja käsketään liikkumaan yhden tunnin ajan. Tämä tehdään kutsumalla `kulje`-metodia.
    - Kilpailu jatkuu, kunnes jokin autoista on edennyt vähintään 10000 kilometriä. Lopuksi tulostetaan kunkin auton kaikki ominaisuudet selkeäksi taulukoksi muotoiltuna.
+
+---
 
 ## 10. Assosiaatio
 
@@ -156,20 +178,30 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
    Kirjoita pääohjelma, joka luo 8000 kilometrin kilpailun nimeltä "Suuri romuralli". Luotavalle kilpailulle annetaan kymmenen auton lista samaan tapaan kuin aiemmassa tehtävässä. Pääohjelma simuloi kilpailun etenemistä kutsumalla toistorakenteessa `tunti_kuluu`-metodia, jonka jälkeen aina tarkistetaan `kilpailu_ohi`-metodin avulla, onko kilpailu ohi. Ajantasainen tilanne tulostetaan `tulosta tilanne`-metodin avulla kymmenen tunnin välein sekä kertaalleen sen jälkeen, kun kilpailu on päättynyt.
 
+---
+
 ## 11. Periytyminen
 
 1. Toteuta seuraava luokkahierarkia Python-kielellä: Julkaisu voi olla kirja tai lehti. Jokaisella julkaisulla on nimi. Kirjalla on lisäksi kirjoittaja ja sivumäärä, kun taas lehdellä on päätoimittaja. Kirjoita luokkiin myös tarvittavat alustajat. Tee aliluokkiin metodi `tulosta_tiedot`, joka tulostaa kyseisen julkaisun kaikki tiedot. Luo pääohjelmassa julkaisut Aku Ankka (päätoimittaja Aki Hyyppä) ja Hytti n:o 6 (kirjailija Rosa Liksom, 200 sivua). Tulosta molempien julkaisujen kaikki tiedot toteuttamiesi metodien avulla.
 
 2. Kirjoita aiemmin laatimallesi `Auto`-luokalle aliluokat `Sähköauto` ja `Polttomoottoriauto`. Sähköautolla on ominaisuutena akkukapasiteetti kilowattitunteina. Polttomoottoriauton ominaisuutena on bensatankin koko litroina. Kirjoita aliluokille alustajat. Esimerkiksi sähköauton alustaja saa parametreinaan rekisteritunnuksen, huippunopeuden ja akkukapasiteetin. Se kutsuu yliluokan alustajaa kahden ensin mainitun asettamiseksi sekä asettaa oman kapasiteettinsa. Kirjoita pääohjelma, jossa luot yhden sähköauton (ABC-15, 180 km/h, 52.5 kWh) ja yhden polttomoottoriauton (ACD-123, 165 km/h, 32.3 l). Aseta kummallekin autolle haluamasi nopeus, käske autoja ajamaan kolmen tunnin verran ja tulosta autojen matkamittarilukemat.
 
-## 12. Ulkoisen rajapinnan käyttö
+---
 
-1. Kirjoita ohjelma, joka hakee ja tulostaa satunnaisen Chuck Norris -vitsin käyttäjälle. Käytä seuravalla sivulla esiteltävää rajapintaa: <https://api.chucknorris.io/>. Käyttäjälle on näytettävä pelkkä vitsin teksti.
+## 12. Ohjelman rakenne
 
-2. Tutustu avoimeen OpenWeather-säärajapintaan: <https://openweathermap.org/api>. Kirjoita ohjelma, joka kysyy käyttäjältä paikkakunnan nimen ja tulostaa sitä vastaavan säätilan tekstin sekä lämpötilan Celsius-asteina. Perehdy rajapinnan dokumentaatioon riittävästi. Palveluun rekisteröityminen on tarpeen, jotta saat rajapintapyynnöissä tarvittavan API-avaimen (*API key*). Selvitä myös, miten saat Kelvin-asteet muunnettua Celsius-asteiksi.
+### Projekti 4.
 
-## 13. Taustapalvelun ja rajapinnan rakentaminen
+1. TODO: "Oliointi" ??
+2. Järjestä projektisi tiedostot tarpeen mukaan erillisiin moduuleihin ja paketteihin. Kuvaa rakenne readme.md-tiedostossa.
 
-1. Toteuta Flask-taustapalvelu, joka ilmoittaa, onko parametrina saatu luku alkuluku vai ei. Hyödynnä toteutuksessa aiempaa tehtävää, jossa alkuluvun testaus tehtiin. Esimerkiksi lukua 31 vastaava GET-pyyntö annetaan muodossa: `http://127.0.0.1:3000/alkuluku/31`. Vastauksen on oltava muodossa: `{"Number":31, "isPrime":true}`.
+---
 
-2. Toteuta taustapalvelu, joka palauttaa annettua lentokentän ICAO-koodia vastaavan lentokentän nimen ja kaupungin JSON-muodossa. Tiedot haetaan opintojaksolla käytetystä lentokenttätietokannasta. Esimerkiksi EFHK-koodia vastaava GET-pyyntö annetaan muodossa: `http://127.0.0.1:3000/kenttä/EFHK`. Vastauksen on oltava muodossa: `{"ICAO":"EFHK", "Name":"Helsinki Vantaa Airport", "Municipality":"Helsinki"}`.
+## 13. Tiedostonkäsittely
+
+### Projekti 5. 
+
+1. Lue pelin introteksti ja ohjeet erillisestä tekstitiedostosta.
+2. Tallenna pelin tilanne erilliseen tekstitiedostoon, jotta pelaaja voi jatkaa peliä myöhemmin siitä mihin jäi. Mahdollista pelin jatkaminen ohjelman käynnistyessä esim. pelaajan nimeä tai tallennettua koodia hyödyntämällä.
+
+---

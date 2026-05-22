@@ -1,9 +1,5 @@
 # Ensimmäinen ohjelma
 
-Tervetuloa ohjelmoimaan Python-kieltä Metropolia Ammattikorkeakoulussa!
-
-... ja sama Pythoniksi:
-
 ```python
 print("Tervetuloa opiskelemaan Python-kieltä!")
 ```
@@ -87,6 +83,27 @@ Hei, maailma!
 Jos ohjelmassa on virheitä, ei hätää! Saat virheilmoituksen, joka auttaa virheen paikantamisessa. Sen jälkeen voit korjata ohjelmaa niin monta kertaa kuin on tarpeen ja suorittaa sen aina uudelleen.
 
 Virheiden teko kuuluu ohjelmointiin. On arvioitu, että 80 prosenttia ammattimaisen ohjelmoijan työajasta kuuluu virheiden jäljitykseen ja niiden korjaamiseen. Myös oppiminen tapahtuu virheitä tekemällä. Kun selvität virheen syyn ja korjaat sen, olet oppinut hieman paremmaksi ohjelmoijaksi.
+
+## Projektin rakenne ohjelmointitehtäville
+
+Kaikki tulevat ohjelmointiharjoitukset tehdään samaan projektikansioon. Luo jokaiselle opiskeltevalle moduulille aina oma alikansio projektikansion sisälle. `hello.py` oli ensimmäisen moduulin harjoitus, joten luo kansio `mod01` ja siirrä `hello.py`-tiedosto sen sisälle.
+
+Jakson lopuksi tehtäväkansion rakenne tulee olle seuraavan kaltainen:
+
+```txt
+python-harjoitukset
+├── mod01
+│   ├── mod02
+│   └── hello.py
+├── mod02
+│   └── moduulin 2 esimerkit ja harjoitusten kooditiedostot
+├── mod03
+│   └── moduulin 3 esimerkit harjoitusten kooditiedostot
+├── ja niin edelleen...
+├── peliprojekti
+│   └── ohjelmointiprojektitehtävän ja siihen liittyvien harjoitusten koodit
+└── .venv
+```
 
 ---
 

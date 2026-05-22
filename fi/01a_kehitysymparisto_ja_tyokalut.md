@@ -1,4 +1,6 @@
-# Ohjelmoinnin kehitysympäristö ja työkalut
+# Ohjelmoinnin aloitus - kehitysympäristö ja työkalut
+
+Tervetuloa ohjelmoimaan Python-ohjelmointia Metropolia Ammattikorkeakoulussa!
 
 ## Käyttöjärjestelmä
 
@@ -75,7 +77,7 @@ Ohjelmiston luomiseen riittää siis periaatteessa mikä tahansa tekstieditori, 
 
 Ohjelmistokehitystä helpottamaan on olemassa myös paljon aputyökaluja liittyen esimerkiksi koodin automaattiseen täydentämiseen ja muotoiluun, värikorostukssin, testaamiseen, virheiden etsimiseen, kääntämiseen konekielelle jne. Kun nämä ominaisuudet on koottu varsinaisen editorin lisäksi samaan sovellukseen, puhutaan ohjelmistokehittimestä eli IDEstä (_Integrated Development Environment_).
 
-Ohjelmistokehittimen asennusta ja käyttöä käsitellään tarkemmin [toisessa moduulissa](./02a_ensimmainen_ohjelma_vscode.md).
+Ohjelmistokehittimen asennusta ja käyttöä käsitellään tarkemmin [seuraavassa osassa](./01b_ensimmainen_ohjelma_vscode.md).
 
 ## Versionhallinta
 
@@ -85,7 +87,9 @@ Versionhallinnan konsepteja hyödynnetään monissa arkisissa sovelluksissa ja p
 
 Erityisesti ohjelmistokehityksessä versionhallinta on käytännössä välttämätöntä, koska ohjelmakoodia muokataan jatkuvasti, ja on tärkeää pystyä seuraamaan, mitä muutoksia on tehty, kuka ne on tehnyt, milloin ja miksi. Versionhallintajärjestelmä pitää kirjaa kaikista näistä tiedoista, mikä helpottaa yhteistyötä, virheiden jäljittämistä ja tarvittaessa vanhojen versioiden palauttamista.
 
-Versionhallintaan ohjelmistokehityksessä perehdytään [seuraavassa osassa](./01b_versionhallinta_ja_git.md).
+Versionhallintaan ohjelmistokehityksessä perehdytään tarkemmin [myöhemmin](./02a_versionhallinta_ja_git.md).
+
+Seuraavaksi asennetaan ohjelmistokehitin ja koodataan [ensimmäinen ohjelma](./01b_ensimmainen_ohjelma_vscode.md).
 
 ---
 
