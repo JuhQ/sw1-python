@@ -93,14 +93,15 @@ Jakson lopuksi tehtäväkansion rakenne tulee olle seuraavan kaltainen:
 ```txt
 python-harjoitukset
 ├── mod01
-│   ├── mod02
-│   └── hello.py
+│   ├── hello.py 
+│   └── moduulin 1 muut esimerkit ja harjoitusten tiedostot
 ├── mod02
 │   └── moduulin 2 esimerkit ja harjoitusten kooditiedostot
 ├── mod03
 │   └── moduulin 3 esimerkit harjoitusten kooditiedostot
 ├── ja niin edelleen...
 ├── peliprojekti
+│   ├── readme.md - projektin dokumentaatio 
 │   └── ohjelmointiprojektitehtävän ja siihen liittyvien harjoitusten koodit
 └── .venv
 ```
