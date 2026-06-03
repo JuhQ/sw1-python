@@ -18,11 +18,9 @@
 1. [Assosiaatio](10_assosiaatio.md)
 1. [Periytyminen](11_periytyminen.md)
 1. [Ohjelman rakenne: moduulit ja paketit](12_ohjelman_rakenne.md)
-1. _WIP:_ [Tiedostonkäsittely](13_tiedostonkasittely.md)
+1. [Tiedostonkäsittely](13_tiedostonkasittely.md)
 
 ## Tehtävät
-
-_WIP_
 
 [Tehtäväsarja](tehtavat.md)
 
@@ -35,3 +33,4 @@ Jakson aikana tehdään yksi isompi henkilökohtainen ohjelmointiprojekti, jonka
 ## Lisenssi
 
 _TODO:_ Laitetaanko esim: <https://creativecommons.org/licenses/by-nc-sa/4.0/>?
+

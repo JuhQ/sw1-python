@@ -79,6 +79,16 @@ Ohjelmistokehitystä helpottamaan on olemassa myös paljon aputyökaluja liittye
 
 Ohjelmistokehittimen asennusta ja käyttöä käsitellään tarkemmin [seuraavassa osassa](./01b_ensimmainen_ohjelma_vscode.md).
 
+### Tekoälyavustimet
+
+Työkalut, kuten Github Copilot, Claude Code ja Cursor ovat viime vuosina yleistyneet ohjelmistokehityksen apuvälineinä. Ne hyödyntävät kehittyneitä kielimalleja ymmärtääkseen kirjoitettua koodia ja tarjotakseen ehdotuksia koodin täydentämiseen ja virheiden korjaamiseen. Niillä voi jopa kehittää kokonaisia ohjelmia ymmärtämättä itse ohjelmointikielestä juuri mitään.
+
+**Oikein käytettynä** tekoälyavustimet nopeuttavat ohjelmointia ja auttavata kehittäjiä löytämään ratkaisuja ongelmiin, mutta on tärkeää muistaa, että ne eivät ole täydellisiä ja niiden ehdotuksia tulee aina arvioida kriittisesti. Ohjelmistokehittäjällä on oltava riittävä asiantuntemus ohjelmiston toiminnasta, jotta hän kykenee arvioimaan automaattisesti generoitua koodia ammattimaisesti ja erottamaan tarpeettoman tai virheellisen koodin tarkoituksenmukaisesta.   
+
+**Välttämättömät ohjelmoijan taidot voit oppia vain itse koodaamalla!**
+
+Tällä kurssilla ohjelmoidaan siis lähtökohtaisesti ilman tekoälyn tarjoamaa apua. Muista, että myös kokeessa joudut kirjoittamaan koodia itsenäisesti ilman apuja.
+
 ## Versionhallinta
 
 Versionhallinnan idea lähtee vanhasta ongelmasta: mitä tapahtuu, kun tiedostoa muokataan ja päivitetään, mutta ei haluta tuhota kuitenkaan vanhoja versioita? Ilman versionhallintaa syntyy helposti sekavia tiedostonimiä kuten “raportti_final”, “raportti_final2” ja “raportti_oikeasti_final”. Versionhallinta ratkaisee tämän pitämällä kirjaa kaikista muutoksista järjestelmällisesti ilman tarvetta luoda aina uusia tiedostoja.

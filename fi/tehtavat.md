@@ -2,7 +2,7 @@
 
 Jokaiseen moduuliin liittyvistä tehtävistä saa yhteensä 6 pistettä. Yhden tehtävän pistearvo saadaan jakamalla se tehtävien lukumäärällä.
 
-Projektiin liittyvät tehtävät arvioidaan osana projektia, niistä voi saada pisteitä projektiin vain ajoissa palautettuna.
+Projektiin liittyvät tehtävät (merkitty erikseen) arvioidaan osana projektia, niistä voi saada pisteitä projektiin vain ajoissa palautettuna.
 
 ---
 
@@ -56,8 +56,8 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 ### Projekti 1. Ohjelmointiprojektitehtävän aloitus
 
-   - Luo pelille oma kansio Python-harjoitusprojektin sisälle `peliprojekti/` ja sen sisälle `readme.md`-tiedosto. Lisää tiedostoon otsikoksi pelisi nimi ja alle oma nimesi.
-   - Tee kansioon ohjelma, joka kysyy pelaajan nimen ja iän, tallentaa nämän muuttujiin ja tulostaa konsoliin.
+   - Luo pelille oma kansio `peliprojekti/` python-harjoitusprojektin sisälle ja sen sisälle `readme.md`-tiedosto. Lisää tiedostoon otsikoksi pelisi nimi ja alle oma nimesi.
+   - Tee kansioon ohjelma, joka kysyy pelaajan nimen ja iän, tallentaa nämä muuttujiin ja tulostaa konsoliin.
 
 ---
 
@@ -97,9 +97,8 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 ### Projekti 2. Päävalikko 
 
-Muokkaa peliprojektiohjelmaa niin, että jos käyttäjä syöttää iän, joka on alle 12 v., ohjelma ilmoittaa alaikäisyydestä ja sammuu. Muussa tapauksessa ohjelma tervehtii käyttäjää, tulostaa päävalikon ja kysyy komentoja, kunnes käyttäjä kirjoittaa "lopeta".
-
-Lisää muutama keksitty komento, jotka antavat keskenään erilaisen tulosteen konsoliin. Komennon jälkeen tulostetaan valikko aina uudelleen.
+1. Muokkaa peliprojektiohjelmaa niin, että jos käyttäjä syöttää iän, joka on alle 12 v., ohjelma ilmoittaa alaikäisyydestä ja sammuu. Muussa tapauksessa ohjelma tervehtii käyttäjää, tulostaa päävalikon ja kysyy komentoja, kunnes käyttäjä kirjoittaa "lopeta".
+2. Lisää muutama keksitty komento, jotka antavat keskenään erilaisen tulosteen konsoliin. Komennon jälkeen tulostetaan valikko aina uudelleen.
 
 ---
 
@@ -134,7 +133,10 @@ Lisää muutama keksitty komento, jotka antavat keskenään erilaisen tulosteen 
 
 ### Projekti 3. Päävalikon toiminnot ja "inventaario"
 
-Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (vähintään 3) oma **funktio**, joka suoritetaan, kun käyttäjä valitsee kyseisen toiminnon. Yhden funktion pitää kysyä käyttäjältä asioita (esim. esine), jotka lisätään listamuuttujaan. Toisen funktion pitää tulostaa listan sisältö käyttäjälle. Muut toiminnot voi ideoida ja toteuttaa vapaasti.
+1. Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (joita vähintään kolme) oma **funktio**, joka suoritetaan, kun käyttäjä valitsee kyseisen toiminnon. 
+  - Yhden funktion pitää kysyä käyttäjältä asioita (esim. esine), jotka lisätään listamuuttujaan.
+  - Toisen funktion pitää tulostaa listan sisältö käyttäjälle.
+  - Muut toiminnot voi ideoida ja toteuttaa vapaasti.
 
 ---
 
@@ -190,10 +192,43 @@ Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (vähi
 
 ## 12. Ohjelman rakenne
 
-### Projekti 4.
+### Projekti 4. - Rakenne kuntoon ja oliot käyttöön
 
-1. TODO: "Oliointi" ??
-2. Järjestä projektisi tiedostot tarpeen mukaan erillisiin moduuleihin ja paketteihin. Kuvaa rakenne readme.md-tiedostossa.
+Huom! Voit toteuttaa peliprojektin myös ilman luokkia ja olioita, mutta silloin et voi saada projektista täysiä pisteitä. Alla oleva oliorakenne on vain ensimmäinen malli. Omaan peliisi voit luoda juuri ne luokat ja oliot, mitkä ovat siinä tarkoituksenmukaisia.
+
+1. Järjestä projektisi tiedostot tarpeen mukaan erillisiin moduuleihin ja paketteihin. Kuvaa rakenne `readme.md`-tiedostossa. Jatka tämän ohjeen noudattamista läpi koko projektin kehityksen!
+2. Luo luokat: `pelaaja`, `huone` ja `esine`
+   - esineiden ominaisuuksia ovat esim. nimi ja paino
+   - pelaajan ominaisuuksia ovat ainakin nimi, lista hallussa olevista esineistä ja sijainti (huone, missä pelaaja kulloinkin on)
+   - huoneen ominaisuuksia ovat nimi ja mahdollisesti esine
+   - kun ohjelma käynnistetään, luodaan pelaajaolio ja muutama esine ja huone
+   - pelaajan toimintoja ovat liikkuminen ja esineen kerääminen (ohjelman käyttäjä voi suorittaa niitä pelin valikosta, päivitä valikkoa tarpeen mukaan)
+
+```mermaid
+classDiagram
+
+class Pelaaja {
+    +nimi: str
+    +esineet: List<Esine>
+    +sijainti: Huone
+    +liiku(kohde: Huone)
+    +keraa_esine()
+}
+
+class Huone {
+    +nimi: str
+    +esine: Esine
+}
+
+class Esine {
+    +nimi: str
+    +paino: float
+}
+
+Pelaaja "1" --> "1" Huone : sijaitsee
+Pelaaja "1" --> "0..*" Esine : omistaa
+Huone "1" --> "0..1" Esine : sisältää
+```
 
 ---
 
@@ -201,7 +236,17 @@ Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (vähi
 
 ### Projekti 5. 
 
-1. Lue pelin introteksti ja ohjeet erillisestä tekstitiedostosta.
+1. Lue pelaajalle pelin käynnistyessä tulostettava esittelyteksti ja ohjeet erillisestä tekstitiedostosta.
+   - Tee tätä varten esimerkiksi `intro.txt` ja `ohjeet.txt` tiedostot. 
 2. Tallenna pelin tilanne erilliseen tekstitiedostoon, jotta pelaaja voi jatkaa peliä myöhemmin siitä mihin jäi. Mahdollista pelin jatkaminen ohjelman käynnistyessä esim. pelaajan nimeä tai tallennettua koodia hyödyntämällä.
 
 ---
+
+<!-- add mermaid support for gh pages -->
+<script type="module">
+    Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {
+      element.classList.add("mermaid");
+    });
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
