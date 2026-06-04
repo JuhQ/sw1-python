@@ -108,6 +108,6 @@ python-harjoitukset
 
 ---
 
-[Seuraavaksi tutustutaan versionhallinnan käyttöön.](01b_Versionhallinnan_kayttoonotto_vscode.md)
+[Seuraavaksi tutustutaan versionhallinnan käyttöön.](02a_versionhallinta_ja_git.md)
 
 ---

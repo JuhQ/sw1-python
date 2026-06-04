@@ -120,6 +120,10 @@ Netti on pullollaan materiaalia Gitin opiskeluun, alla poimittuna muutamia hyöd
 
 ---
 
+[Seuraavaksi otetaan versionhallinta käyttöön omassa harjoitusprojektissa](02b_versionhallinnan_kayttoonotto_vscode.md).
+
+---
+
 <!-- add mermaid support for gh pages -->
 <script type="module">
     Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {

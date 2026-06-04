@@ -32,7 +32,7 @@ Projektissa kehitetään komentorivikäyttöliittymällä pelattava [seikkailupe
 - Komentorivikäyttöliittymä, jossa pääsilmukka ja valikot
 - Koodin rivimäärä yhteensä vähintään noin 200 riviä ja enintään 1000 riviä kommentteineen ???
 - Dokumentaatio
-  - `readme.md`-tiedosto repositoriossa: kuvaa pelin toimintaperiaatteen ja toiminnalisuudet sekä miten kestävä kehitys on otettu huomioon
+  - `readme.md`-tiedosto repositoriossa: kuvaa tarkasti pelin idean, tavoitteen, toimintaperiaatteet ja toiminnallisuudet sekä miten kestävän kehityksen näkökulma on otettu huomioon
   - koodin asianmukainen kommentointi
 - Pelin Git-repositorio julkaistaan ja jaetaan opettajille GitHubissa
 
@@ -56,7 +56,7 @@ Projektissa kehitetään komentorivikäyttöliittymällä pelattava [seikkailupe
 
 Vähennykset:
 
-- Opiskelijan pitää kyetä selittämään kaikki palauttamansa koodi katselmuksessa. Muussa tapauksessa pistevähennys enintään -10 p.
+- Opiskelijan pitää kyetä selittämään kaikki palauttamansa koodi henkilökohtaisessa katselmustilaisuudessa. Muussa tapauksessa pistevähennys enintään -10 p.
 - Peli-idea ei vaatimusten mukainen: -1 p.
 - Projektin palautus myöhässä tai selkeästi puuttellinen: -5 p.
 

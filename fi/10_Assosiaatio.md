@@ -225,7 +225,7 @@ Tässä esimerkissä maalaamo tuntee maalattavan auton vain `maalaa`-metodin suo
 
 ---
 
-[Seuraavassa moduulissa käsitellään olion periytymistä.](11_Periytyminen.md)
+[Seuraavassa moduulissa käsitellään olion periytymistä.](11_periytyminen.md)
 
 ---
 

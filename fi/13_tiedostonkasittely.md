@@ -127,6 +127,19 @@ print("Ohjelman suoritus jatkuu.")
 
 `try`-koodilohkossa olevaa koodia siis ajetaan niin kauan, kunnes tapahtuu virhe. Virheen tapahtuessa koodin suoritus hyppää heti oikeaan `except`-lohkoon. Jos virhettä ei tapahdu, `except`-lohko(t) sivuutetaan ja ohjelman suoritus jatkuu normaalisti sen jälkeen. 
 
+Jotta pelaajan ikä saadaan luettu onnistuneesti ennen ohjelman jatkamista, voidaan käyttää `while`-silmukkaa, joka toistuu niin kauan, kunnes ikä on saatu luettua onnistuneesti:
+
+```python
+while True:
+    try:
+        pelaajan_ika = int(input("Anna pelaajan ikä: "))
+        break  # ikä luettu onnistuneesti, poistutaan silmukasta
+    except ValueError:
+        print("Virhe: syötetty arvo ei ole kokonaisluku. Yritä uudestaan.")
+print(f"Pelaajan ikä on {pelaajan_ika}.")
+```
+
+
 Tilanteissa, joissa ohjelman suoritus voi mahdollisesti kaatua johonkin varsinaisesta koodista riippumattomaan ajonaikaiseen virheeseen, on tärkeää käyttää virheenkäsittelyä. Muuten ohjelma kaatuu ja sen suoritus loppuu kokonaan siihen.
 
 ---

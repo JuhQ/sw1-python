@@ -241,7 +241,7 @@ for luku in range(6):
 
 ---
 
-[Seuraavassa moduulissa käsitellään funktioita.](06_Funktio.md)
+[Seuraavassa moduulissa käsitellään funktioita.](07_funktio.md)
 
 ---
 

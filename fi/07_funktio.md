@@ -313,6 +313,6 @@ Lisäksi Python-tukee anonyymejä funktioita eli lambda-funktioita. Tällöin m�
 
 ---
 
-[Seuraavassa moduulissa käsitellään Pythonin tietorakenteita.](07_Monikko_joukko_ja_sanakirja.md)
+[Seuraavassa moduulissa käsitellään Pythonin tietorakenteita.](08_monikko_joukko_ja_sanakirja.md)
 
 ---

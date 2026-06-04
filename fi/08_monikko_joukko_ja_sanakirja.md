@@ -323,7 +323,7 @@ Yllä olevassa silmukan jokaisella kierroksella `auto`-muuttujaan sijoitetaan yk
 
 ---
 
-[Seuraavassa moduulissa käsitellään relaatiotietokannan käyttöä Python-ohjelmassa.](08_Relaatiotietokannan_käyttö.md) 
+[Seuraavassa moduulissa tutustutaan olio-ohjelmointiin.](09_olio-ohjelmointi.md) 
 
 ---
 

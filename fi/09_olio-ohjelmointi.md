@@ -243,7 +243,7 @@ flowchart LR
 
 ---
 
-[Seuraavassa moduulissa käsitellään olioiden välisiä yhteyksiä ja keskinäistä vuorovaikutusta.](10_Assosiaatio.md)
+[Seuraavassa moduulissa käsitellään olioiden välisiä yhteyksiä ja keskinäistä vuorovaikutusta.](10_assosiaatio.md)
 
 ---
 

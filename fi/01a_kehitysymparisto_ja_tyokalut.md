@@ -99,6 +99,8 @@ Erityisesti ohjelmistokehityksessä versionhallinta on käytännössä välttäm
 
 Versionhallintaan ohjelmistokehityksessä perehdytään tarkemmin [myöhemmin](./02a_versionhallinta_ja_git.md).
 
+---
+
 Seuraavaksi asennetaan ohjelmistokehitin ja koodataan [ensimmäinen ohjelma](./01b_ensimmainen_ohjelma_vscode.md).
 
 ---

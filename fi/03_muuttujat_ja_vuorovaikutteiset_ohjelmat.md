@@ -290,6 +290,6 @@ Edellä lueteltuja vaihtoehtoisia tapoja ei käsitellä tässä. Aiheesta löyty
 
 ---
 
-[Seuraavassa moduulissa käsitellään if-valintarakennetta.](03_Valintarakenne.md)
+[Seuraavassa moduulissa käsitellään if-valintarakennetta.](04_valintarakenne.md)
 
 ---

@@ -291,7 +291,7 @@ Ohjelma siis kirjoitettiin siten, että ensimmäisen haaran kireää ehtoa löys
 
 ---
 
-[Seuraavassa moduulissa käsitellään while-toistorakennetta.](04_While-toistorakenne.md)
+[Seuraavassa moduulissa käsitellään while-toistorakennetta.](05_while-toistorakenne.md)
 
 ---
 

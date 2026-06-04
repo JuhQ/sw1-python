@@ -94,6 +94,6 @@ Palauta Omassa oleviin tehtäviin aina suoraan kyseisen moduulin tehtävien ratk
 
 ---
 
-[Seuraavassa moduulissa aloitetaan varsinainen ohjelmointi.](02_Muuttujat_ja_vuorovaikutteiset_ohjelmat.md)
+[Seuraavassa moduulissa aloitetaan varsinainen ohjelmointi.](03_muuttujat_ja_vuorovaikutteiset_ohjelmat.md)
 
 ---

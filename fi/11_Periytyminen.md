@@ -231,7 +231,7 @@ classDiagram
 
 ---
 
-[Seuraavassa moduulissa haetaan tietoa ohjelman käyttöön ulkoisista palveluista.](12_Ulkoisen_rajapinnan_käyttö.md)
+[Seuraavassa moduulissa käsitellään projektin rakennetta.](12_ohjelman_rakenne.md)
 
 ---
 

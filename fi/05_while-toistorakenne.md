@@ -299,7 +299,7 @@ Jos pysäytyspainike ei pysäytä suoritusta, tarkista, että päätetoimintojen
 
 ---
 
-[Seuraavassa moduulissa käsitellään tietorakennetta lista ja for-toistolausetta.](05_Listarakenne_ja_for-toistorakenne.md)
+[Seuraavassa moduulissa käsitellään tietorakennetta lista ja for-toistolausetta.](06_listarakenne_ja_for-toistorakenne.md)
 
 ---
 

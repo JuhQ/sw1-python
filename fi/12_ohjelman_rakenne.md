@@ -178,6 +178,10 @@ Nyt, kun `koira.py` ajetaan suoraan, tulostuu: `TestiRekku haukkuu: Vuh vuh!`. J
 
 ---
 
+[Jakson viimeisessä ohjelmointimoduulissa luetaan ja kijoitetaan tiedostoon](13_tiedostonkasittely.md).
+
+---
+
 <!-- add mermaid support for gh pages -->
 <script type="module">
     Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {
