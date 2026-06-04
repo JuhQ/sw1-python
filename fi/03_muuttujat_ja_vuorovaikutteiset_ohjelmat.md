@@ -59,9 +59,9 @@ käyttäjä = input('Anna nimesi: ')
 print("Hauska tavata, " + käyttäjä + "!")
 ```
 
-Käyttäjän syöte luetaan sisäänrakennetulla input-funktiolla. Funktio saa argumenttinaan tekstin, joka tulostetaan ruudulle. Tekstin on syytä olla sellainen, että käyttäjä tietää, mitä hänen oletetaan syöttävän.
+Käyttäjän syöte luetaan sisäänrakennetulla `input`-funktiolla. Funktio saa argumenttinaan tekstin, joka tulostetaan ruudulle. Tekstin on syytä olla sellainen, että käyttäjä tietää, mitä hänen oletetaan syöttävän.
 
-Sisäänrakennettu input-funktio odottaa käyttäjän syötettä näppäimistöltä. Käyttäjä päättää syötteen Enter-näppäimellä. Kun syöte on annettu, input-funktion arvona on syötettä vastaava merkkijono.
+Sisäänrakennettu input-funktio odottaa käyttäjän syötettä näppäimistöltä. Käyttäjä päättää syötteen Enter-näppäimellä. Kun syöte on annettu, input-funktion arvoksi syntyy syötettä vastaava merkkijono.
 
 Input-funktion arvo, toisin sanoen sen palauttama merkkijono, on laitettava talteen, jotta sitä voidaan käyttää myöhemmin ohjelmassa. Tätä varten se tallennetaan muuttujaan (*variable*). Tässä tapauksessa muuttuja on nimeltään käyttäjä. Käyttäjän antama syöte tallentuu tietokoneen muistiin, ja se saadaan haettua sieltä muuttujan nimen avulla. Muuttujan nimi on siis ikäänkuin kahva tai nimilappu, jonka avulla arvo voidaan muistista hakea.
 
