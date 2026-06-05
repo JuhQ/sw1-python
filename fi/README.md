@@ -30,7 +30,8 @@ Jakson aikana tehdään yksi isompi henkilökohtainen ohjelmointiprojekti, jonka
 
 ---
 
-## Lisenssi
+## Materiaalin lisenssi
 
-_TODO:_ Laitetaanko esim: <https://creativecommons.org/licenses/by-nc-sa/4.0/>?
+Creative Commons Nimeä-EiKaupallinen-JaaSamoin 4.0
 
+Lisätietoa: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)
