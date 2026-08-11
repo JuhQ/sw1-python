@@ -38,7 +38,9 @@ Projektissa kehitetään komentorivikäyttöliittymällä pelattava [seikkailupe
 
 ## Arviointi
 
-0-10 p. Vähimmäissuoritus 5 p.
+0-10 pistettä. Vähimmäissuoritus 5 pistettä.
+
+Tekoälyllä tehdyn projektin maksimipistemäärä 5 p. (arvosana 1).
 
 - Osatehtävien ohjeiden mukainen palautus ajallaan: 0-5 p (piste/tehtävä).
   - Pelaajan nimi ja ikä.
