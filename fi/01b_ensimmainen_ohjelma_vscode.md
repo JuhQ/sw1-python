@@ -88,10 +88,34 @@ Virheiden teko kuuluu ohjelmointiin. On arvioitu, että 80 prosenttia ammattimai
 
 Kaikki tulevat ohjelmointiharjoitukset tehdään samaan projektikansioon. Luo jokaiselle opiskeltevalle moduulille aina oma alikansio projektikansion sisälle. `hello.py` oli ensimmäisen moduulin harjoitus, joten luo kansio `mod01` ja siirrä `hello.py`-tiedosto sen sisälle.
 
-Jakson lopuksi tehtäväkansion rakenne tulee olle seuraavan kaltainen:
+Luo harjoituskansion juureen `readme.md`-tekstitiedosto, johon listaat kaikki tekemäsi tehtävät sitä mukaa, kun niitä teet. Esimerkki sisällöstä:
+
+```markdown
+# Ohjelmisto 1 - Python harjoitukset
+
+**Oma Nimeni**
+
+## Moduuli 1
+
+Tein tehtävät 1 ja 2.
+
+## Moduuli 2
+
+Tein tehtävät 1, 2 ja 3.
+
+Tehtävän 4 tein osittain, mutta ongelmaksi jäi pelkkien grammojen laskemin oikein.
+
+## Moduuli 3 ja niin edelleen...
+
+...
+...
+```
+
+Voit tallentaa harjoituskansioon myös muita oppituntien koodiesimerkkejä ja omia muistiinpanoja. Jakson lopuksi kansion rakenne tulee olle seuraavan kaltainen:
 
 ```txt
 python-harjoitukset
+├── readme.md - listaus tekemistäsi harjoitustehtävistä (ks. yllä)
 ├── mod01
 │   ├── hello.py 
 │   └── moduulin 1 muut esimerkit ja harjoitusten tiedostot
