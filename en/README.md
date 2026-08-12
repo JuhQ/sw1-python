@@ -15,14 +15,14 @@
 7. [Function](07_functions.md)
 8. [Tuple, Set, and Dictionary](08_tuple_set_and_dictionary.md)
 9. [Class, Object, and Initializer](09_object-oriented_programming.md)
-10. [Association](10_association.md)
-11. [Inheritance](11_inheritance.md)
+10. [Association](10_Association.md)
+11. [Inheritance](11_Inheritance.md)
 12. [Program Structure: Modules and Packages](12_program_structure.md)
 13. [File Handling](13_file_handling.md)
 
 ## Exercises
 
-[Exercise Set](exercises.md)
+[Exercise Set](Exercises.md)
 
 ## Project Work
 
@@ -35,4 +35,3 @@ During the course, students complete one larger individual programming project. 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 
 More information: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)
-
