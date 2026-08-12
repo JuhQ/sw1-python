@@ -4,13 +4,13 @@
 
 1. Ohjelmoinnin aloitus
     1. [Kehitysympäristö ja työkalut](01a_kehitysymparisto_ja_tyokalut.md)  
-    1. [Ensimmäinen ohjelma](02a_Ensimmainen_ohjelma_vscode.md)
+    1. [Ensimmäinen ohjelma](01b_ensimmainen_ohjelma_vscode.md)
 1. Versionhallinta
     1. [Versionhallinta ja Git](02a_versionhallinta_ja_git.md)
     1. [Versionhallinnan käyttöönotto](02b_versionhallinnan_kayttoonotto_vscode.md)
 1. [Muuttujat ja vuorovaikutteiset ohjelmat](03_muuttujat_ja_vuorovaikutteiset_ohjelmat.md)
 1. [Valintarakenne (if)](04_valintarakenne.md)
-1. [Alkuehdollinen toistorakenne (while)](05_while-toistorakenne.md.md)
+1. [Alkuehdollinen toistorakenne (while)](05_while-toistorakenne.md)
 1. [Listarakenne ja läpikäyvä toistorakenne (for)](06_listarakenne_ja_for-toistorakenne.md)
 1. [Funktio](07_funktio.md)
 1. [Monikko, joukko ja sanakirja](08_monikko_joukko_ja_sanakirja.md)
