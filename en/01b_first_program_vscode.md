@@ -19,8 +19,6 @@ In this first module, you will install Python development tools and learn to wri
 
 The first task is to install a programming environment consisting of the Python interpreter and a code editor with extensions (integrated development environment). This course uses [Visual Studio Code](https://code.visualstudio.com/). The development environment is also referred to by the English abbreviation IDE, which stands for _Integrated Development Environment_. It means professional software that allows you to write, run, and test programs.
 
-The programming environment is installed according to [these instructions](https://code.visualstudio.com/docs/python/python-tutorial).
-
 ### Installing the Python Interpreter
 
 The Python interpreter is a program that translates Python-language statements one statement at a time into a form understood by the computer's processor, that is, machine language. Installing it is necessary in order to program with Python.
@@ -40,6 +38,8 @@ The following image shows the selection box where this can be enabled:
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/).
 2. After the installation, open Visual Studio Code and install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+
+The programming environment is installed according to [these instructions](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### Creating the First Programming Project and Python File
 

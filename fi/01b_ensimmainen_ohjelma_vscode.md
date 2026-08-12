@@ -19,8 +19,6 @@ Tässä ensimmäisessä moduulissa asennat Python-kehitystyökalut ja opit kirjo
 
 Ensimmäisenä tehtävänä onkin asentaa ohjelmointiympäristö, joka koostuu Python-tulkista ja koodieditorista lisäosineen (ohjelmistokehitin). Tällä opintojaksolla käytetään [Visual Studio Code](https://code.visualstudio.com/) -kehitintä. Ohjelmiskehittimestä käytetään myös englanninkielistä nimitystä IDE, joka tulee sanoista _Integrated Development Environment_. Se tarkoittaa ammattikäyttöön soveltuvaa ohjelmistoa, jonka avulla voit kirjoittaa, ajaa ja testata ohjelmia.
 
-Ohjelmointiympäristön asentaminen tapahtuu [näiden ohjeiden](https://code.visualstudio.com/docs/python/python-tutorial) mukaisesti.
-
 ### Python-tulkin asennus
 
 Python-tulkki on ohjelma, joka lause kerrallaan tulkkaa Python-kieliset lauseet tietokoneen suorittimen ymmärtämään muotoon eli konekielelle. Sen asentaminen on välttämätöntä, jotta voit ohjelmoida Pythonilla.
@@ -40,6 +38,8 @@ Seuraava kuva näyttää valintaruudun, josta lisäys tehdään:
 
 1. Lataa ja asenna [Visual Studio Code](https://code.visualstudio.com/).
 1. Asennuksen jälkeen avaa Visual Studio Code ja asenna [Python-laajennus](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+
+Ohjelmointiympäristön asentaminen tapahtuu [näiden ohjeiden](https://code.visualstudio.com/docs/python/python-tutorial) mukaisesti.
 
 ### Ensimmäisen ohjelmointiprojektin ja Python-tiedoston luonti
 
