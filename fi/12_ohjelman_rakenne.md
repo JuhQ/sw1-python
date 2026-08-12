@@ -23,6 +23,10 @@ import matikka
 print(matikka.plus(2, 3))  # Tulostaa: 5
 ```
 
+#### Huomautus moduulien nimistä
+
+Kun nimeät moduuleja, pidä mielessä, että moduulin nimi on myös tiedoston nimi. Tämä voi aiheuttaa ongelmia, jos moduulin nimi on sama kuin jokin Pythonin sisäänrakennettu moduuli. Jos esimerkiksi luot moduulin nimeltä `math.py`, se korvaa sisäänrakennetun `math`-moduulin, etkä pysty käyttämään sen funktioita. Siksi moduuleille suositellaan käytettäväksi yksilöllisiä nimiä.
+
 ## Paketti
 
 Jos moduuleja on useampia ja ne halutaan koota yhteen kokonaisuuteen, puhutaan paketista. Paketti on yksinkertaisesti kansio, joka sisältää moduulit ja yleensä myös erityisen tiedoston nimeltä `__init__.py`. Tämä tiedosto voi olla tyhjä, mutta sen olemassaolo kertoo Pythonille, että kyseessä on paketti eikä tavallinen kansio. Paketin avulla voi luoda laajoja kirjastoja, jotka koostuvat useista moduuleista ja jopa alikansioista.
@@ -174,7 +178,7 @@ if __name__ == "__main__":
     koira.hauku()
 ```
 
-Nyt, kun `koira.py` ajetaan suoraan, tulostuu: `TestiRekku haukkuu: Vuh vuh!`. Jos sensijaan moduuli tuodaan käyttöön jossain toisessa ohjelmassa, ei tätä testikoodia suoriteta.
+Nyt, kun `koira.py` ajetaan suoraan, tulostuu: `TestiRekku haukkuu: Vuh vuh!`. Jos sen sijaan moduuli tuodaan käyttöön jossain toisessa ohjelmassa, ei tätä testikoodia suoriteta.
 
 ---
 

@@ -1,13 +1,8 @@
 # Loop structure (while)
 
-Next you will learn to create programs where the same part of code is executed multiple times.
-This is possible with loop structures. With a loop structure you can for example program something
-to be done 20 times or alternatively to be repeated until the user enters an input to stop the
-repetition.
+Next you will learn to create programs where the same part of code is executed multiple times. This is possible with loop structures. With a loop structure you can for example program something to be done 20 times or alternatively to be repeated until the user enters an input to stop the repetition.
 
-Repetition is one the three basic principles of programming languages with sequence and selection.
-Once you have mastered these three basic principles, you can write an algorithmic solution to
-any computational problem.
+Repetition is one the three basic principles of programming languages with sequence and selection. Once you have mastered these three basic principles, you can write an algorithmic solution to any computational problem.
 
 Python language has two types of loops:
 
@@ -48,7 +43,7 @@ is false.
 You can write a conditional loop in Python using a `while` statement:
 
 ```monospace
-while (condition):
+while condition:
 	block to be repeated
 ```
 
@@ -93,18 +88,11 @@ This example has two variables:
 2. `finished_rounds` - a loop variable that is initialized with value 0. At the end of each round the loop variable value
    is increased by one.
 
-Let's assume the user wants five greetings. The value 5 is saved to the `rounds` variable. When the `while` loop
-is entered the first time, the `finished_rounds` variable has been initialized to 0. The condition in the while loop
-is now 0<5 which is true. The execution proceeds inside the while loop. In the while loop the first greeting is printed
-out and the value of `finished_rounds` increases from zero to one.
+Let's assume the user wants five greetings. The value 5 is saved to the `rounds` variable. When the `while` loop is entered the first time, the `finished_rounds` variable has been initialized to 0. The condition in the while loop is now `0 < 5` which is true. The execution proceeds inside the while loop. In the while loop the first greeting is printed out and the value of `finished_rounds` increases from zero to one.
 
-As we are using a while loop, the condition is now evaluated again. The condition is now 1 < 5 which is still true. Inside
-the while loop the second greeting is printed out and the value of `finished_rounds` is increased once more. The new value is 2.
+As we are using a while loop, the condition is now evaluated again. The condition is now `1 < 5` which is still true. Inside the while loop the second greeting is printed out and the value of `finished_rounds` is increased once more. The new value is 2.
 
-The structure is looped through until after the greeting is printed out for the fifth time and the value of `finished_rounds`
-increases to 5. After that the condition is tested again, but this time the condition is 5 < 5 which is false. The loop is
-not repeated again and the execution of the program would continue from the next statement after the while loop. In our example
-there are not statements after the while loop so the execution of the program ends.
+The structure is looped through until after the greeting is printed out for the fifth time and the value of `finished_rounds` increases to 5. After that the condition is tested again, but this time the condition is `5 < 5` which is false. The loop is not repeated again and the execution of the program would continue from the next statement after the while loop. In our example there are not statements after the while loop so the execution of the program ends.
 
 ## Example 2: User ends the repetition
 
@@ -155,17 +143,13 @@ Rolled 17 times.
 Rolled 37 times.
 ```
 
-The example uses the Python built-in `random` library. The library
-must be imported with an import statement at the beginning of the program
-before it can be used. You do not have to memorize how to use ready-made libraries
-as you can always check the documentation for the correct use: <https://docs.python.org/>
+The example uses the Python built-in `random` library. The library must be imported with an import statement at the beginning of the program before it can be used. You do not have to memorize how to use ready-made libraries as you can always check the documentation for the correct use: <https://docs.python.org/>
 
 ## Nested loops
 
 Loops can be placed one inside another so that the inner loop is executed on each round of the outer loop.
 
-Let's print out the multiplication table from one to five. The table includes all twenty-five possible
-multiplications with numbers 1, 2, 3, 4 and 5:
+Let's print out the multiplication table from one to five. The table includes all twenty-five possible multiplications with numbers 1, 2, 3, 4 and 5:
 
 ```python
 first = 1
@@ -191,8 +175,7 @@ while first <= 5:
 5 times 5 is 25
 ```
 
-Let's extend the dice rolling example so that the program prints out how many rounds on _average_ is needed before
-getting a pair of sixes.
+Let's extend the dice rolling example so that the program prints out how many rounds on _average_ is needed before getting a pair of sixes.
 
 To calculate the average, let's set the number of simulated rounds to a very large number, a hundred thousand:
 
@@ -225,14 +208,11 @@ variation affects the outcome:
 Average rolls required:  35.86
 ```
 
-We can see that the average of 36 rolls are required. This matches the result we would get by calculation.
-We just created an empirical simulation where an approximation of a theoretical value is achieved by
-imitating the phenomenon on a computer.
+We can see that the average of 36 rolls are required. This matches the result we would get by calculation. We just created an empirical simulation where an approximation of a theoretical value is achieved by imitating the phenomenon on a computer.
 
 ## Break
 
-It is possible to exit a loop structure in Python using the `break` statement. If `break` is used, the
-value of the condition is no longer calculated.
+It is possible to exit a loop structure in Python using the `break` statement. If `break` is used, the value of the condition is no longer calculated.
 
 In the following example the command MAYDAY is used to break out of the loop entirely and immediately:
 
@@ -246,8 +226,7 @@ while command != "stop":
 print("Execution stopped.")
 ```
 
-When the user has given the MAYDAY command, the condition of the while loop permits the start of a new round.
-The `if` statement inside the while loop however causes the program to exit the loop instantly:
+When the user has given the MAYDAY command, the condition of the while loop permits the start of a new round. The `if` statement inside the while loop however causes the program to exit the loop instantly:
 
 ```monospace
 Enter command: sing
@@ -267,9 +246,7 @@ using the break statement should be limited to situations where using it advance
 
 ## While/else
 
-In Python, an `else` branch can be added to a while structure so that if the condition of the loop is false, the else
-branch will be executed. Therefore, the else branch is executed after a successful run of the loop. It is not executed
-if a `break` statement is used to exit the loop.
+In Python, an `else` branch can be added to a while structure so that if the condition of the loop is false, the else branch will be executed. Therefore, the else branch is executed after a successful run of the loop. It is not executed if a `break` statement is used to exit the loop.
 
 Let's look at the following example:
 
@@ -308,9 +285,7 @@ However, this is a feature of the language that is quite rarely used.
 
 ## Infinite loop
 
-Finally, we will look at the infinite loop, a programming error that all programmers cause every once in a while.
-A program gets to an infinite loop when the condition of a loop never changes to false. This can occur
-for example, if you forget to increase the value of a loop variable inside the loop.
+Finally, we will look at the infinite loop, a programming error that all programmers cause every once in a while. A program gets to an infinite loop when the condition of a loop never changes to false. This can occur for example, if you forget to increase the value of a loop variable inside the loop.
 
 The next faulty program causes an infinite loop to occur:
 
@@ -318,7 +293,7 @@ The next faulty program causes an infinite loop to occur:
 # Faulty program, infinite loop
 
 number = 1
-while number<5:
+while number < 5:
     print(number)
 
 # This part is never reached:
@@ -334,17 +309,13 @@ The execution never stops:
 ...
 ```
 
-A program that has entered an infinite loop must be stopped by force. In PyCharm IDE it is done by clicking
-the stop button on the side of the console window:
+A program stuck in an infinite loop must be stopped forcibly.
 
-![Stop button to stop executing the program](img/stop_button.png)
-
-If the stop button does not stop the execution, check that the terminal emulation operations are enabled in
-the console window: select **Run/Edit Configurations** and check the **Emulate Terminal in Output Console** checkbox.
+In **Visual Studio Code**, program execution can be stopped by clicking the trash can icon at the top of the terminal window or in the side panel, or by clicking the terminal window and pressing the keyboard shortcut `Ctrl+C`.
 
 ---
 
-**Next:** [List structures and iterative loops (for)](05_List_Structures_and_Iterative_Loops.md)
+**Next:** [List structures and iterative loops (for)](06_list_structure_and_for_loop.md)
 
 <!-- add mermaid support for gh pages -->
 <script type="module">

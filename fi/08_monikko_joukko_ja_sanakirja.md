@@ -6,7 +6,7 @@ Tässä moduulissa opit käyttämään näitä kolmea Pythonin tietorakennetta: 
 
 ## Monikko
 
-Monikko (*tuple*) muistuttaa Pythonin listarakennetta siinä mielessä, että siinä voidaan esittää järjestetty jono alkioita. Toisin kuin lista, monikko on kuitenkin muuttumaton: siihen ei voi lisätä alkioita eikä siitä voi poistaa alkioita monikon luonnin jälkeen.
+Monikko (_tuple_) muistuttaa Pythonin listarakennetta siinä mielessä, että siinä voidaan esittää järjestetty jono alkioita. Toisin kuin lista, monikko on kuitenkin muuttumaton: siihen ei voi lisätä alkioita eikä siitä voi poistaa alkioita monikon luonnin jälkeen.
 
 Monikkoa on tarkoituksenmukaista käyttää tilanteissa, joissa alkioiden jono on luonteeltaan staattinen: tiedetään, että muutoksille ei ole tarvetta ohjelman suorituksen aikana. Monikon käytön edut liittyvät muistinhallintaan: monikolle voidaan varata sitä luotaessa kiinteä muistialue, ja yksittäisen alkion osoite keskusmuistissa voidaan laskea suoraan tietorakenteen alkuosoitteen ja indeksin avulla. Listan tapauksessa tämä ei ole mahdollista, vaan haettaessa alkiota indeksin perusteella ajoympäristö joutuu yleensä iteroimaan alkiot lävitse. Ero näkyy siten, että alkion haku indeksin perusteella on monikon tapauksessa nopeampaa. Käytännössä ero on huomaamaton silloin, kun tietorakenne on pieni.
 
@@ -84,7 +84,7 @@ Nopista tuli 5 ja 6.
 
 ## Joukko
 
-Joukko (*set*) on järjestämätön tietorakenne, eli sen alkiot voivat olla missä tahansa järjestyksessä. Koska joukon alkioille ei ole määritelty järjestystä, ei alkioihin voi myöskään viitata indeksillä. Toisin kuin listassa tai monikossa, sama alkio voi esiintyä joukossa vain kertaalleen, eli joukossa ei voi olla kahta samansisältöistä alkiota.
+Joukko (_set_) on järjestämätön tietorakenne, eli sen alkiot voivat olla missä tahansa järjestyksessä. Koska joukon alkioille ei ole määritelty järjestystä, ei alkioihin voi myöskään viitata indeksillä. Toisin kuin listassa tai monikossa, sama alkio voi esiintyä joukossa vain kertaalleen, eli joukossa ei voi olla kahta samansisältöistä alkiota.
 
 Tarkastellaan seuraavaa esimerkkiä:
 
@@ -145,7 +145,7 @@ Tuloste on seuraavanlainen:
 
 ## Sanakirja
 
-Sanakirja (*dictionary*) on Pythonin käytetyimpiä tietorakenteita.
+Sanakirja (_dictionary_) on Pythonin käytetyimpiä tietorakenteita.
 
 Sanakirjaan voidaan tallentaa avain-arvopareja. Avain on ikään kuin kahva, josta vetämällä oikea sanakirjan tietue löytyy, jotta sen arvon päästään käsiksi.
 
@@ -248,9 +248,9 @@ Sisäkkäisen tietorakenteen sisältämiin tietoihin päästään käsiksi yhdis
 graph TD
     A["autot[n]"]
 
-    A --> 0["0[avain]"] 
-    A --> 1["1[avain]"]  
-    A --> 2["2[avain]"] 
+    A --> 0["0[avain]"]
+    A --> 1["1[avain]"]
+    A --> 2["2[avain]"]
 
     0 -- 'merkki' --> V1["'Toyota'"]
     0 -- 'malli' --> V2["'Corolla'"]
@@ -319,11 +319,11 @@ Merkki: Ford, Malli: Focus, Vuosimalli: 2020
 Merkki: VW, Malli: ID.3, Vuosimalli: 2023
 ```
 
-Yllä olevassa silmukan jokaisella kierroksella `auto`-muuttujaan sijoitetaan yksi sanakirja `autot`-listasta. Tämän jälkeen voimme käyttää  `auto`-muuttujan sisältämää sanakirjaa normaalisti sen avaimien avulla (esim.`auto['merkki']`).
+Yllä olevassa silmukan jokaisella kierroksella `auto`-muuttujaan sijoitetaan yksi sanakirja `autot`-listasta. Tämän jälkeen voimme käyttää `auto`-muuttujan sisältämää sanakirjaa normaalisti sen avaimien avulla (esim.`auto['merkki']`).
 
 ---
 
-[Seuraavassa moduulissa tutustutaan olio-ohjelmointiin.](09_olio-ohjelmointi.md) 
+[Seuraavassa moduulissa tutustutaan olio-ohjelmointiin.](09_olio-ohjelmointi.md)
 
 ---
 

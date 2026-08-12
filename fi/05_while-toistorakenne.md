@@ -6,8 +6,8 @@ Toisto on yksi ohjelmointikielten kolmesta perusperiaatteesta peräkkäisyyden j
 
 Python-kielessä on kaksi toistorakennetta:
 
-1. alkuehdollinen toistorakenne (*while*)
-2. iteroiva toistorakenne (*for*)
+1. alkuehdollinen toistorakenne (_while_)
+2. iteroiva toistorakenne (_for_)
 
 Tässä moduulissa opit käyttämään alkuehdollista toistorakennetta.
 
@@ -34,7 +34,7 @@ flowchart TD
 
 Toistorakenteen avulla saadaan ohjelmassa oleva lauseiden joukko toistettua useita kertoja. Pseudokoodiesimerkissä on alkuehto, joka testataan rakenteeseen tultaessa. Jos ehto on tosi, suoritetaan sisennetty lohko. Aina kun sisennetty lohko on suoritettu, testataan onko alkuehto yhä voimassa. Jos on, suoritetaan sisennetty lohko uudelleen. Toistorakenteesta päästään pois vasta, kun alkuehto on epätosi.
 
-Pythonissa alkuehdollinen toistorakenne toteutetaan  while-lauseen avulla.
+Pythonissa alkuehdollinen toistorakenne toteutetaan while-lauseen avulla.
 
 ```python
 while ehto:
@@ -86,11 +86,11 @@ Näin toistokierrokset jatkuvat. Viidennnen tervehdyksen tulostamisen päätteek
 Seuraavassa ohjelmassa toistokierrosten lukumäärä ei ole tiedossa toistorakenteeseen tultaessa. Ohjelma kysyy käyttäjältä tekstimuotoisia komentoja siihen saakka, kunnes käyttäjä antaa lopeta-komennon:
 
 ```python
-komento = input ("Anna komento: ")
-while komento!="lopeta":
-    print ("Suoritan toiminnon: " + komento)
+komento = input("Anna komento: ")
+while komento != "lopeta":
+    print("Suoritan toiminnon: " + komento)
     komento = input("Anna komento: ")
-print ("Toiminnot lopetettu.")
+print("Toiminnot lopetettu.")
 ```
 
 Suorituskertojen määrä riippuu käyttäjän syötteestä:
@@ -113,7 +113,7 @@ Tarvittavien heittojen lukumäärä vaihtelee suorituskerrasta toiseen:
 ```python
 import random
 noppa1 = noppa2 = heitot = 0
-while (noppa1!=6 or noppa2!=6):
+while (noppa1 != 6 or noppa2 != 6):
     noppa1 = random.randint(1,6)
     noppa2 = random.randint(1,6)
     heitot = heitot + 1
@@ -160,7 +160,7 @@ while eka <= 5:
 5 kertaa 5 on 25
 ```
 
-Laajennetaan edellistä kahden nopan heittämisesimerkkiä siten, että ohjelma tulostaa, montako heittokertaa tarvitaan *keskimäärin* ennen kuin saadaan kaksi kuutosta.
+Laajennetaan edellistä kahden nopan heittämisesimerkkiä siten, että ohjelma tulostaa, montako heittokertaa tarvitaan _keskimäärin_ ennen kuin saadaan kaksi kuutosta.
 
 Keskiarvon laskemiseksi asetetaan simuloitavien heittosarjojen lukumäärä hyvin suureksi, sataantuhanteen:
 
@@ -171,7 +171,7 @@ heitot_yhteensä = 0
 while toistot < 100000:
 
     noppa1 = noppa2 = heitot = 0
-    while (noppa1!=6 or noppa2!=6):
+    while (noppa1 != 6 or noppa2 != 6):
         noppa1 = random.randint(1,6)
         noppa2 = random.randint(1,6)
         heitot = heitot + 1
@@ -200,13 +200,13 @@ Python-kielessä on break-lause, jonka avulla on mahdollista poistua toistoraken
 Seuraavassa esimerkissä MAYDAY-komennolla poistutaan toistorakenteen sisältä kokonaan ja saman tien:
 
 ```python
-komento = input ("Anna komento: ")
-while komento!="lopeta":
-    if komento=="MAYDAY":
+komento = input("Anna komento: ")
+while komento != "lopeta":
+    if komento == "MAYDAY":
         break
-    print ("Suoritan toiminnon: " + komento)
+    print("Suoritan toiminnon: " + komento)
     komento = input("Anna komento: ")
-print ("Toiminnot lopetettu.")
+print("Toiminnot lopetettu.")
 ```
 
 Kun käyttäjä on antanut MAYDAY-komennon, sallii while-toistorakenteen alkuehto uuden toistokierroksen aloittamisen. While-lohkon sisällä olevan if-lauseen suorituksen seurauksena toistorakenteesta poistutaan välittömästi:
@@ -220,7 +220,7 @@ Anna komento: MAYDAY
 Toiminnot lopetettu.
 ```
 
-Break-lauseen käytön suhteen kannattaa olla varovainen. Sen avulla voidaan kirjoittaa vaikeasti hahmotettavaa ohjelmakoodia, ns. spagettikoodia. Toistoehto kannattaa lähtökohtaisesti  rakentaa siten, että break-lausetta ei tarvita.
+Break-lauseen käytön suhteen kannattaa olla varovainen. Sen avulla voidaan kirjoittaa vaikeasti hahmotettavaa ohjelmakoodia, ns. spagettikoodia. Toistoehto kannattaa lähtökohtaisesti rakentaa siten, että break-lausetta ei tarvita.
 
 Helppolukuisen ja logiikaltaan selkeän ohjelman kirjoittaminen on osa ohjelmoijan ammattitaitoa. Niinpä break-lauseen käyttö kannattaa rajata tilanteisiin, joissa käyttö edistää näitä tavoitteita.
 
@@ -231,15 +231,15 @@ Python-kielessä while-rakenteeseen voidaan liittää else-haara, johon suoritus
 Tarkastellaan seuraavaa ohjelmaesimerkkiä:
 
 ```python
-komento = input ("Anna komento: ")
-while komento!="lopeta":
-    if komento=="MAYDAY":
+komento = input("Anna komento: ")
+while komento != "lopeta":
+    if komento == "MAYDAY":
         break
-    print ("Suoritan toiminnon: " + komento)
+    print("Suoritan toiminnon: " + komento)
     komento = input("Anna komento: ")
 else:
-    print ("Näkemiin.")
-print ("Toiminnot lopetettu.")
+    print("Näkemiin.")
+print("Toiminnot lopetettu.")
 ```
 
 Ohjelma tulostaa Näkemiin-tekstin yhden kerran silloin, kun toistorakenteesta poistutaan normaalisti alkuehdon tullessa epätodeksi:
@@ -273,8 +273,8 @@ Seuraava virheellinen ohjelmakoodi tuottaa ikuisen silmukan:
 # Virheellinen ohjelma, ikuinen silmukka
 
 luku = 1
-while luku<5:
-    print (luku)
+while luku < 5:
+    print(luku)
 
 # Tänne ei koskaan päästä:
 print("Valmista tuli.")
@@ -289,7 +289,7 @@ Suoritus ei pääty koskaan:
 ...
 ```
 
-Ikuiseen silmukkaan joutunut ohjelma on pysäytettävä väkisin. 
+Ikuiseen silmukkaan joutunut ohjelma on pysäytettävä väkisin.
 
 **Visual Studio Code** -kehittimessä ohjelman suoritus pysäytetään napsauttamalla terminaali-ikkunan ylälaidassa tai sivupaneelissa olevaa roskakorikuvaketta tai klikkaamalla terminaali-ikkunaa ja painamalla näppäinyhdistelmää `Ctrl+C`.
 

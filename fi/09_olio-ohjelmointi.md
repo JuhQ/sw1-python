@@ -24,12 +24,12 @@ Voimme käyttää Koira-luokkaa siten, että luomme tuosta luokasta olion. Olio 
 ```python
 class Koira:
     pass
-   
+
 koira = Koira()
 koira.nimi = "Rekku"
 koira.syntymävuosi = 2022
 
-print (f"{koira.nimi} on syntynyt vuonna {koira.syntymävuosi}." )
+print(f"{koira.nimi} on syntynyt vuonna {koira.syntymävuosi}." )
 ```
 
 Pääohjelman ensimmäinen lause luo Koira-olion, johon viitataan muuttujalla `koira`. Luodulle koiralle annetaan nimeksi Rekku ja syntymävuodeksi 2022. Nämä ovat luodun olion ominaisuuksia, ja ne ovat oliokohtaisia. Voisimme siis luoda monta koiraa, joista jokaisella olisi oma yksilöllinen nimensä ja syntymävuotensa. Jollekin koirista voisimme lisäksi määrittää rodun ja jollekin lempinimen. Olioiden ominaisuudet voivat siis poiketa toisistaan.
@@ -42,7 +42,7 @@ Esimerkkiohjelman viimeinen lause tulostaa pääohjelman luoman koiraolion nimen
 Rekku on syntynyt vuonna 2022.
 ```
 
-Huomaa Python-kielen vakiintunut kirjoitustapa luokkien nimille: ne kirjoitetaan isoin alkukirjaimin. Jos luokan nimi koostuu useammasta sanasta, sanat kirjoitetaan yhteen ilman alaviivamerkkiä siten, että kukin sana aloitetaan isolla alkukirjaimella. Tästä kirjoitustyylistä käytetään nimitystä *CamelCase*. Esimerkki tällaisesta luokan nimestä on `NäytönSuorakulmio`.
+Huomaa Python-kielen vakiintunut kirjoitustapa luokkien nimille: ne kirjoitetaan isoin alkukirjaimin. Jos luokan nimi koostuu useammasta sanasta, sanat kirjoitetaan yhteen ilman alaviivamerkkiä siten, että kukin sana aloitetaan isolla alkukirjaimella. Tästä kirjoitustyylistä käytetään nimitystä [_CamelCase_](https://fi.wikipedia.org/wiki/CamelCase). Esimerkki tällaisesta luokan nimestä on `NäytönSuorakulmio`.
 
 ## Alustaja eli konstruktori
 
@@ -58,7 +58,7 @@ class Koira:
 
 koira = Koira("Rekku", 2022)
 
-print (f"{koira.nimi} on syntynyt vuonna {koira.syntymävuosi}." )
+print(f"{koira.nimi} on syntynyt vuonna {koira.syntymävuosi}." )
 ```
 
 Python-kielen alustaja määritetään luokan sisällä kirjoittamalla funktio, jonka nimenä on `__init__`. Funktion ensimmäiseksi parametriksi määritetään `self`. Ensimmäinen parametri viittaa aina luotavaan olioon, ja Pythonissa on yleinen käytäntö käyttää tässä nimeä `self`. Tämän jälkeen määritellään muut parametrit, jotka alustajalle halutaan antaa. Tässä tapauksessa ne ovat nimi ja syntymävuosi. Näin kirjoitettu ja nimetty funktio tulkitaan ohjelmaa ajettaessa automaattisesti alustajaksi, ja se suoritetaan aina, kun uusi olio luodaan. Alustajan loppuun ei kirjoiteta return-lausetta.
@@ -80,7 +80,7 @@ koira = Koira("Rekku", 2022)
 
 ## Metodit
 
-Edellä opittiin määrittämään oliolle ominaisuuksia. Tämän lisäksi olioille halutaan usein määrittää toimintoja, joita  kutsutaan metodeiksi. Kirjoitetaan alla Koira-luokkaan hauku-metodi, jota voidaan kutsua Koira-luokan ilmentymille eli olioille. Esimerkin ohjelma luo kaksi Koira-oliota ja käskee niitä haukkumaan kyseiselle oliolle tyypilliseen tapaan:
+Edellä opittiin määrittämään oliolle ominaisuuksia. Tämän lisäksi olioille halutaan usein määrittää toimintoja, joita kutsutaan metodeiksi. Kirjoitetaan alla Koira-luokkaan hauku-metodi, jota voidaan kutsua Koira-luokan ilmentymille eli olioille. Esimerkin ohjelma luo kaksi Koira-oliota ja käskee niitä haukkumaan kyseiselle oliolle tyypilliseen tapaan:
 
 ```python
 class Koira:
@@ -129,7 +129,7 @@ class Koira:
 
 koira1 = Koira("Muro", 2018)
 koira2 = Koira("Rekku", 2022, "Viu viu viu")
-print (f"Koiria on nyt {Koira.tehty}.")
+print(f"Koiria on nyt {Koira.tehty}.")
 ```
 
 Luokkamuuttujan arvoon viitataan kirjoittamalla sekä luokan että luokkamuuttujan nimi, esimerkissä siis `Koira.tehty`.
@@ -214,7 +214,7 @@ flowchart LR
 
 Tällöin esimerkiksi lause `koira3.nimi` palauttaisi arvon `'Muro'`, koska `koira3` viittaa samaan olioon kuin `koira1`. Ja jos kirjoitetaan lause `koira3.nimi = "Musti"`, muuttuu `koira1`-olion nimi-ominaisuuden arvoksi `'Musti'`.
 
-Jos kirjoitamme lauseen `koira2 = koira1`, kaikki muuttujat `koira1`, `koira2` ja `koira3` viittaavat samaan olioon, jolloin koiraan, jonka nimi on "Rekku", ei ole enää mitään viittausta. Tällöin tuo olio poistuu muistista, kun Pythonin roskienkeruu (*garbage collection*) siivoaa muistista olioita, joita ei enää ole käytössä:
+Jos kirjoitamme lauseen `koira2 = koira1`, kaikki muuttujat `koira1`, `koira2` ja `koira3` viittaavat samaan olioon, jolloin koiraan, jonka nimi on "Rekku", ei ole enää mitään viittausta. Tällöin tuo olio poistuu muistista, kun Pythonin roskienkeruu (_garbage collection_) siivoaa muistista olioita, joita ei enää ole käytössä:
 
 ```mermaid
 flowchart LR
@@ -239,7 +239,6 @@ flowchart LR
     V2 --> O1
     V3 --> O1
 ```
-
 
 ---
 

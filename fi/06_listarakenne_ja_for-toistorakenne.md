@@ -66,7 +66,7 @@ Viimeinen esimerkki tulostaa listan kokonaisuudessaan.
 Listan pituus saadaan tarvittaessa Python-kielen sisäänrakennetulla `len`-funktiolla:
 
 ```python
-print (len(nimet))
+print(len(nimet))
 ```
 
 Tuloksena on listan pituus, joka on siis yhtä suurempi kuin viimeisen alkion indeksi:
@@ -84,15 +84,15 @@ Seuraavassa listassa on viisi alkiota. Tarkoitus on viitata listan viidenteen al
 ```python
 nimet = ["Viivi", "Ahmed", "Pekka", "Olga", "Mary"]
 # Virheellinen viittaus
-print (nimet[5])
+print(nimet[5])
 ```
 
 Syntyy ajonaikainen poikkeus, ja konsolissa nähdään selostus virheestä:
 
 ```monospace
 Traceback (most recent call last):
-  File "C:/Users/olliv/PycharmProjects/Python_Ohjelmistoteema/Esimerkit/listaesimerkki.py", line 4, in <module>
-    print (nimet[5])
+  File "C:/Users/olliv/Python_Ohjelmistoteema/Esimerkit/listaesimerkki.py", line 4, in <module>
+    print(nimet[5])
 IndexError: list index out of range
 
 Process finished with exit code 1
@@ -111,7 +111,7 @@ Seuraava ohjelma luo aluksi tyhjän listan. Sen jälkeen ohjelma pyytää käytt
 nimet = []
 
 nimi = input("Anna ensimmäinen nimi tai lopeta painamalla Enter: ")
-while nimi!="":
+while nimi != "":
     nimet.append(nimi)
     nimi = input("Anna seuraava nimi tai lopeta painamalla Enter: ")
 
@@ -133,15 +133,15 @@ Esimerkissä listan loppuun saatiin lisättyä uusia alkioita yksi kerrallaan `a
 
 Tavallisimmat listaoperaatiot on koottu alla olevaan taulukkoon:
 
-| Operaatio | Tarkoitus                                                                                   | Esimerkki                                                         |
-|-----------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| append    | lisää alkion listan loppuun                                                                 | nimet.append("Matti")                                             |
-| remove    | poistaa alkion ensimmäisen ilmentymän listasta                                              | nimet.remove("Pekka")                                             |
-| insert    | lisää alkion haluttuun kohtaan, ennen alkiota, jonka indeksi vastaa ensimmäistä argumenttia | nimet.insert(4, "Teppo")                                          |
-| extend    | liittää toisen listan ensimmäiseen listaan                                                  | toisetNimet = ["Allu","Ninni"]<br/>nimet.extend(toisetNimet)      |
-| index     | palauttaa alkion ensimmäisen sijainnin indeksin                                             | monesko = nimet.index("Olga")                                     |
-| in        | testaa, esiintyykö alkio listassa                                                           | if "Matti" in nimet:<br/>&nbsp;&nbsp;&nbsp;&nbsp;"Matti löytyi"   |
-| sort      | lajittelee listan alkiot aakkos- tai suuruusjärjestykseen                                   | luvut.sort()                                                      |
+| Operaatio | Tarkoitus                                                                                   | Esimerkki                                                       |
+| --------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| append    | lisää alkion listan loppuun                                                                 | nimet.append("Matti")                                           |
+| remove    | poistaa alkion ensimmäisen ilmentymän listasta                                              | nimet.remove("Pekka")                                           |
+| insert    | lisää alkion haluttuun kohtaan, ennen alkiota, jonka indeksi vastaa ensimmäistä argumenttia | nimet.insert(4, "Teppo")                                        |
+| extend    | liittää toisen listan ensimmäiseen listaan                                                  | toisetNimet = ["Allu","Ninni"]<br/>nimet.extend(toisetNimet)    |
+| index     | palauttaa alkion ensimmäisen sijainnin indeksin                                             | monesko = nimet.index("Olga")                                   |
+| in        | testaa, esiintyykö alkio listassa                                                           | if "Matti" in nimet:<br/>&nbsp;&nbsp;&nbsp;&nbsp;"Matti löytyi" |
+| sort      | lajittelee listan alkiot aakkos- tai suuruusjärjestykseen                                   | luvut.sort()                                                    |
 
 ## Listan läpikäynti for-toistorakenteen avulla
 
@@ -158,7 +158,7 @@ while etunimi ! = "":
     etunimi = input("Anna seuraava nimi tai lopeta painamalla Enter: ")
 
 for nimi in nimet:
-    print (f"Moi, {nimi}!")
+    print(f"Moi, {nimi}!")
 ```
 
 Ohjelma toimii näin:
@@ -177,7 +177,7 @@ Listan läpikäynti toteutettiin for-toistorakenteen avulla:
 
 ```python
 for n in nimet:
-    print (f"Moi, {n}!")
+    print(f"Moi, {n}!")
 ```
 
 Toistorakenne on omiaan listan läpikäyntiin. Kierrosmuuttuja `n` saa vuoron perään arvokseen kunkin listan alkion. Toistoa jatketaan niin kauan kuin listassa riittää alkioita.
@@ -192,7 +192,7 @@ Tällaista listan läpikäyntiä alkio kerrallaan kutsutaan listan iteroimiseksi
 - `range(5,0,-1)` määrittää arvot 5, 4, 3, 2, 1
 - `range(10,21,2)` määrittää arvot 10, 12, 14, 16, 18, 20
 
-`range`-funktion ensimmäinen argumentti on välin alkupiste, toinen argumentti on välin loppupiste ja kolmas, valinnainen argumentti on  askeleen suuruus. Jos askeleen suuruus jätetään määrittämättä, on askel yksi. Jos askeleeksi annetaan nolla, saadaan virheilmoitus.
+`range`-funktion ensimmäinen argumentti on välin alkupiste, toinen argumentti on välin loppupiste ja kolmas, valinnainen argumentti on askeleen suuruus. Jos askeleen suuruus jätetään määrittämättä, on askel yksi. Jos askeleeksi annetaan nolla, saadaan virheilmoitus.
 
 Jos `range`-funktiolle annetaan vain yksi argumentti, tulkitaan se välin loppupisteeksi. Alkupiste on tällöin nolla ja askel yksi.
 
@@ -202,7 +202,7 @@ Esimerkiksi seuraava ohjelma tulostaa kolmella jaolliset luvut väliltä 3 ja 30
 
 ```python
 for luku in range(3,31,3):
-    print (luku)
+    print(luku)
 ```
 
 Ohjelma tulostaa:
@@ -236,7 +236,7 @@ flowchart TD
 
 ```python
 for luku in range(6):
-    print ("Moi!")
+    print("Moi!")
 ```
 
 ---

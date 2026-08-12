@@ -1,26 +1,38 @@
-# Python Language
+# Software 1: Python Programming Basics
 
-## Part 1: Basics of Python Programming
-1. [First Program](01a_First_Program.md) and [Deployment of Version Control (GitHub)](01b_Deployment_of_Version_Control.md)
-2. [Variables and Interactive Programs](02_Variables_and_Interactive_Programs.md)
-3. [Conditional Structures (if)](03_Conditional_Structures.md)
-4. [While Loops (while)](04_While_Loops.md)
-5. [List Structures and Iterative Loops (for)](05_List_Structures_and_Iterative_Loops.md)
-6. [Functions](06_Functions.md)
-7. [Tuple, Set, and Dictionary](07_Tuple,_Set,_and_Dictionary.md)
-8. [Using Relational Databases](08_Using_Relational_Databases.md)
+## Contents
 
-## Part 2: Mastering Python
-9. [Fundamentals of Object-Oriented Programming](09_Fundamentals_of_Object-Oriented_Programming.md)
-10. [Association](10_Association.md)
-11. [Inheritance](11_Inheritance.md)
-12. [Using External Interfaces](12_Using_External_Interfaces.md)
-13. [Setting Up a Backend Service With an Interface](13_Setting_Up_a_Backend_Service_With_an_Interface.md)
+1. Getting Started with Programming
+   1. [Development Environment and Tools](01a_development_environment_and_tools.md)
+   2. [First Program](01b_first_program_vscode.md)
+2. Version Control
+   1. [Version Control and Git](02a_version_control_and_git.md)
+   2. [Setting Up Version Control](02b_setting_up_version_control_vscode.md)
+3. [Variables and Interactive Programs](03_variables_and_interactive_programs.md)
+4. [Selection Structure (if)](04_conditional_structure.md)
+5. [Pretest Loop Structure (while)](05_while_loop.md)
+6. [List Structure and Iteration Structure (for)](06_list_structure_and_for_loop.md)
+7. [Function](07_functions.md)
+8. [Tuple, Set, and Dictionary](08_tuple_set_and_dictionary.md)
+9. [Class, Object, and Initializer](09_object-oriented_programming.md)
+10. [Association](10_association.md)
+11. [Inheritance](11_inheritance.md)
+12. [Program Structure: Modules and Packages](12_program_structure.md)
+13. [File Handling](13_file_handling.md)
 
 ## Exercises
 
-[Exercise sets](Exercises.md)
+[Exercise Set](exercises.md)
 
-## Project Assignments
-1. [Preliminary Project Assignment](Project/01_Preliminary_Project_Assignment.md)
-2. [Final Project Assignment](Project/02_Final_Project_Assignment.md)
+## Project Work
+
+During the course, students complete one larger individual programming project. The instructions and criteria can be found here: [First Programming Project](programming_project_1.md).
+
+---
+
+## Material License
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+
+More information: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi)
+

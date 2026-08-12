@@ -9,9 +9,9 @@ Projektiin liittyvät tehtävät (merkitty erikseen) arvioidaan osana projektia,
 ## 1 ja 2. Ensimmäinen ohjelma ja versionhallinnan käyttöönotto
 
 1. Asenna kehitysympäristö. Kirjoita ohjelma, joka tervehtii sinua omalla nimelläsi.
-Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
+   Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
-2. Luo itsellesi GitHub-käyttäjätili ja tee repositorio Python-harjoitustehtäviä varten. Määritä oma paikallinen projektisi käyttämään repositoriota harjoitustehtäväprojektin etärepositoriona. Varmista, että voit hakea, sitouttaa ja työntää tekemiäsi muutoksia (*pull*, *commit*, *push*).
+2. Luo itsellesi GitHub-käyttäjätili ja tee repositorio Python-harjoitustehtäviä varten. Määritä oma paikallinen projektisi käyttämään repositoriota harjoitustehtäväprojektin etärepositoriona. Varmista, että voit hakea, sitouttaa ja työntää tekemiäsi muutoksia (_pull_, _commit_, _push_).
 
 ---
 
@@ -45,7 +45,7 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
    13.5
 
    Massa nykymittojen mukaan:
-   29 kilogrammaa ja 545.95 grammaa. 
+   29 kilogrammaa ja 545.95 grammaa.
    ```
 
 6. Kirjoita ohjelma, joka arpoo ja tulostaa kaksi erilaista numerolukon koodia:
@@ -56,8 +56,8 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 ### Projekti 1. Ohjelmointiprojektitehtävän aloitus
 
-   - Luo pelille oma kansio `peliprojekti/` python-harjoitusprojektin sisälle ja sen sisälle `readme.md`-tiedosto. Lisää tiedostoon otsikoksi pelisi nimi ja alle oma nimesi.
-   - Tee kansioon ohjelma, joka kysyy pelaajan nimen ja iän, tallentaa nämä muuttujiin ja tulostaa konsoliin.
+- Luo pelille oma kansio `peliprojekti/` python-harjoitusprojektin sisälle ja sen sisälle `readme.md`-tiedosto. Lisää tiedostoon otsikoksi pelisi nimi ja alle oma nimesi.
+- Tee kansioon ohjelma, joka kysyy pelaajan nimen ja iän, tallentaa nämä muuttujiin ja tulostaa konsoliin.
 
 ---
 
@@ -93,9 +93,9 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 5. Kirjoita ohjelma, joka kysyy käyttäjältä käyttäjätunnuksen ja salasanan. Jos jompikumpi tai molemmat ovat väärin, tunnus ja salasana kysytään uudelleen. Tätä jatketaan kunnes kirjautumistiedot ovat oikein tai väärät tiedot on syötetty viisi kertaa. Edellisessä tapauksessa tulostetaan `Tervetuloa` ja jälkimmäisessä `Pääsy evätty`. (Oikea käyttäjätunnus on **python** ja salasana **rules**).
 
-6. Toteutetaan algoritmi piin (π) likiarvon laskemiseksi. Oletetaan, että A on yksikköympyrä eli ympyrä, jonka keskipiste on origossa ja jonka säde on yksi. Sen ympärille piirretään pienin mahdollinen neliö B siten, että ympyrä A jää kokonaan neliön sisäpuolelle. Neliön nurkkapisteet ovat tällöin (-1,-1), (1,-1), (1,1) ja (-1,1). Jos neliön sisälle arvotaan satunnaisesti suuri määrä pisteitä, osuu niistä myös ympyrän sisälle likimain niin suuri osuus kuin ympyrän pinta-ala on neliön pinta-alasta eli πr^2/4, joka (koska ympyrän säde on yksi) sievenee muotoon *π/4*. Tästä saadaan yksinkertainen menetelmä piin likiarvon laskemiseksi: Arvotaan neliön B sisälle suuri määrä satunnaisissa kohdissa olevia pisteitä, esimerkiksi miljoona. Olkoon N tämä pisteiden kokonaismäärä. Jokaisesta neliön B sisään arvotusta pisteestä testataan vuorollaan, jääkö se myös yksikköympyrän A sisälle. Olkoon n ympyrän sisälle jäävien pisteiden kokonaismäärä. Nyt pätee n/N≈π/4, josta saadaan π≈4n/N. Kirjoita ohjelma, joka kysyy arvottavien pisteiden määrän käyttäjältä ja toteuttaa piin likiarvon laskennan edellä kuvatulla menetelmällä. Lopuksi ohjelma tulostaa piin likiarvon käyttäjälle. (Huomaa, että jokaisesta arvotusta pisteestä (x, y) on helppoa testata onko se yksikköympyrän A sisällä: riittää testata, toteuttaako piste epäyhtälön *x^2+y^2<1*.)
+6. Toteutetaan algoritmi piin (π) likiarvon laskemiseksi. Oletetaan, että A on yksikköympyrä eli ympyrä, jonka keskipiste on origossa ja jonka säde on yksi. Sen ympärille piirretään pienin mahdollinen neliö B siten, että ympyrä A jää kokonaan neliön sisäpuolelle. Neliön nurkkapisteet ovat tällöin (-1,-1), (1,-1), (1,1) ja (-1,1). Jos neliön sisälle arvotaan satunnaisesti suuri määrä pisteitä, osuu niistä myös ympyrän sisälle likimain niin suuri osuus kuin ympyrän pinta-ala on neliön pinta-alasta eli πr^2/4, joka (koska ympyrän säde on yksi) sievenee muotoon _π/4_. Tästä saadaan yksinkertainen menetelmä piin likiarvon laskemiseksi: Arvotaan neliön B sisälle suuri määrä satunnaisissa kohdissa olevia pisteitä, esimerkiksi miljoona. Olkoon N tämä pisteiden kokonaismäärä. Jokaisesta neliön B sisään arvotusta pisteestä testataan vuorollaan, jääkö se myös yksikköympyrän A sisälle. Olkoon n ympyrän sisälle jäävien pisteiden kokonaismäärä. Nyt pätee n/N≈π/4, josta saadaan π≈4n/N. Kirjoita ohjelma, joka kysyy arvottavien pisteiden määrän käyttäjältä ja toteuttaa piin likiarvon laskennan edellä kuvatulla menetelmällä. Lopuksi ohjelma tulostaa piin likiarvon käyttäjälle. (Huomaa, että jokaisesta arvotusta pisteestä (x, y) on helppoa testata onko se yksikköympyrän A sisällä: riittää testata, toteuttaako piste epäyhtälön _x^2+y^2<1_.)
 
-### Projekti 2. Päävalikko 
+### Projekti 2. Päävalikko
 
 1. Muokkaa peliprojektiohjelmaa niin, että jos käyttäjä syöttää iän, joka on alle 12 v., ohjelma ilmoittaa alaikäisyydestä ja sammuu. Muussa tapauksessa ohjelma tervehtii käyttäjää, tulostaa päävalikon ja kysyy komentoja, kunnes käyttäjä kirjoittaa "lopeta".
 2. Lisää muutama keksitty komento, jotka antavat keskenään erilaisen tulosteen konsoliin. Komennon jälkeen tulostetaan valikko aina uudelleen.
@@ -133,10 +133,11 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 ### Projekti 3. Päävalikon toiminnot ja "inventaario"
 
-1. Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (joita vähintään kolme) oma **funktio**, joka suoritetaan, kun käyttäjä valitsee kyseisen toiminnon. 
-  - Yhden funktion pitää kysyä käyttäjältä asioita (esim. esine), jotka lisätään listamuuttujaan.
-  - Toisen funktion pitää tulostaa listan sisältö käyttäjälle.
-  - Muut toiminnot voi ideoida ja toteuttaa vapaasti.
+1. Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (joita vähintään kolme) oma **funktio**, joka suoritetaan, kun käyttäjä valitsee kyseisen toiminnon.
+
+- Yhden funktion pitää kysyä käyttäjältä asioita (esim. esine), jotka lisätään listamuuttujaan.
+- Toisen funktion pitää tulostaa listan sisältö käyttäjälle.
+- Muut toiminnot voi ideoida ja toteuttaa vapaasti.
 
 ---
 
@@ -146,7 +147,7 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 2. Kirjoita ohjelma, joka kysyy käyttäjältä nimiä siihen saakka, kunnes käyttäjä syöttää tyhjän merkkijonon. Kunkin nimen syöttämisen jälkeen ohjelma tulostaa joko tekstin `Uusi nimi` tai `Aiemmin syötetty nimi` sen mukaan, syötettiinkö nimi ensimmäistä kertaa. Lopuksi ohjelma luettelee syötetyt nimet yksi kerrallaan allekkain mielivaltaisessa järjestyksessä. Käytä joukkotietorakennetta nimien tallentamiseen.
 
-3. Kirjoita ohjelma lentoasematietojen hakemiseksi ja tallentamiseksi. Ohjelma kysyy käyttäjältä, haluaako tämä syöttää uuden lentoaseman, hakea jo syötetyn lentoaseman tiedot vai  lopettaa. Jos käyttäjä valitsee uuden lentoaseman syöttämisen, ohjelma kysyy käyttäjältä lentoaseman ICAO-koodin ja nimen. Jos käyttäjä valitsee haun, ohjelma kysyy ICAO-koodin ja tulostaa sitä vastaavan lentoaseman nimen. Jos käyttäjä haluaa lopettaa, ohjelman suoritus päättyy. Käyttäjä saa valita uuden toiminnon miten monta kertaa tahansa aina siihen asti, kunnes hän haluaa lopettaa. (ICAO-koodi on lentoaseman yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK. Löydät koodeja helposti selaimen avulla.)
+3. Kirjoita ohjelma lentoasematietojen hakemiseksi ja tallentamiseksi. Ohjelma kysyy käyttäjältä, haluaako tämä syöttää uuden lentoaseman, hakea jo syötetyn lentoaseman tiedot vai lopettaa. Jos käyttäjä valitsee uuden lentoaseman syöttämisen, ohjelma kysyy käyttäjältä lentoaseman ICAO-koodin ja nimen. Jos käyttäjä valitsee haun, ohjelma kysyy ICAO-koodin ja tulostaa sitä vastaavan lentoaseman nimen. Jos käyttäjä haluaa lopettaa, ohjelman suoritus päättyy. Käyttäjä saa valita uuden toiminnon miten monta kertaa tahansa aina siihen asti, kunnes hän haluaa lopettaa. (ICAO-koodi on lentoaseman yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK. Löydät koodeja helposti selaimen avulla.)
 
 ---
 
@@ -167,9 +168,9 @@ Jos nimesi olisi Viivi Virta, ohjelma tulostaisi: `Hei, Viivi Virta!`
 
 ## 10. Assosiaatio
 
-1. Kirjoita `Hissi`-luokka, joka saa alustajaparametreinaan alimman ja ylimmän kerroksen numeron. Hissillä on metodit `siirry_kerrokseen`, `kerros_ylös` ja `kerros_alas`. Uusi hissi on aina alimmassa kerroksessa. Jos tee luodulle hissille `h` esimerkiksi metodikutsun `h.siirry_kerrokseen(5)`, metodi kutsuu joko `kerros_ylös`- tai `kerros_alas`-metodia niin monta kertaa, että  hissi päätyy viidenteen kerrokseen. Viimeksi mainitut metodit ajavat hissiä yhden kerroksen ylös- tai alaspäin ja ilmoittavat, missä kerroksessa hissi sen jälkeen on. Testaa luokkaa siten, että teet pääohjelmassa hissin ja käsket sen siirtymään haluamaasi kerrokseen ja sen jälkeen takaisin alimpaan kerrokseen.
+1. Kirjoita `Hissi`-luokka, joka saa alustajaparametreinaan alimman ja ylimmän kerroksen numeron. Hissillä on metodit `siirry_kerrokseen`, `kerros_ylös` ja `kerros_alas`. Uusi hissi on aina alimmassa kerroksessa. Jos tee luodulle hissille `h` esimerkiksi metodikutsun `h.siirry_kerrokseen(5)`, metodi kutsuu joko `kerros_ylös`- tai `kerros_alas`-metodia niin monta kertaa, että hissi päätyy viidenteen kerrokseen. Viimeksi mainitut metodit ajavat hissiä yhden kerroksen ylös- tai alaspäin ja ilmoittavat, missä kerroksessa hissi sen jälkeen on. Testaa luokkaa siten, että teet pääohjelmassa hissin ja käsket sen siirtymään haluamaasi kerrokseen ja sen jälkeen takaisin alimpaan kerrokseen.
 
-2. Jatka edellisen tehtävän ohjelmaa siten, että teet `Talo`-luokan. Talon alustajaparametreina annetaan alimman ja  ylimmän kerroksen numero sekä hissien lukumäärä. Talon luonnin yhteydessä talo luo tarvittavan määrän hissejä. Hissien lista tallennetaan talon ominaisuutena. Kirjoita taloon metodi `aja_hissiä`, joka saa parametreinaan hissin numeron ja kohdekerroksen. Kirjoita pääohjelmaan lauseet talon luomiseksi ja talon hisseillä ajelemiseksi.
+2. Jatka edellisen tehtävän ohjelmaa siten, että teet `Talo`-luokan. Talon alustajaparametreina annetaan alimman ja ylimmän kerroksen numero sekä hissien lukumäärä. Talon luonnin yhteydessä talo luo tarvittavan määrän hissejä. Hissien lista tallennetaan talon ominaisuutena. Kirjoita taloon metodi `aja_hissiä`, joka saa parametreinaan hissin numeron ja kohdekerroksen. Kirjoita pääohjelmaan lauseet talon luomiseksi ja talon hisseillä ajelemiseksi.
 
 3. Jatka edellisen tehtävän ohjelmaa siten, että `Talo`-luokassa on parametriton metodi `palohälytys`, joka käskee kaikki hissit pohjakerrokseen. Jatka pääohjelmaa siten, että talossasi tulee palohälytys.
 
@@ -234,10 +235,10 @@ Huone "1" --> "0..1" Esine : sisältää
 
 ## 13. Tiedostonkäsittely
 
-### Projekti 5. 
+### Projekti 5.
 
 1. Lue pelaajalle pelin käynnistyessä tulostettava esittelyteksti ja ohjeet erillisestä tekstitiedostosta.
-   - Tee tätä varten esimerkiksi `intro.txt` ja `ohjeet.txt` tiedostot. 
+   - Tee tätä varten esimerkiksi `intro.txt` ja `ohjeet.txt` tiedostot.
 2. Tallenna pelin tilanne erilliseen tekstitiedostoon, jotta pelaaja voi jatkaa peliä myöhemmin siitä mihin jäi. Mahdollista pelin jatkaminen ohjelman käynnistyessä esim. pelaajan nimeä tai tallennettua koodia hyödyntämällä.
 
 ---

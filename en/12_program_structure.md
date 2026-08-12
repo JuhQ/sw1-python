@@ -23,6 +23,10 @@ import math_utils
 print(math_utils.add(2, 3))  # Prints: 5
 ```
 
+#### Notice about module names
+
+When naming modules, keep in mind that the name of the module is also the name of the file. This might cause problems if the module name is the same as a built-in Python module. For example, if you create a module named `math.py`, it will override the built-in `math` module and you won't be able to use its functions. Therefore, it is recommended to use unique names for your modules.
+
 ## Package
 
 If there are multiple modules that you want to group together, you create a package. A package is simply a directory that contains modules and usually an `__init__.py` file. The `__init__.py` file can be empty, but its presence tells Python that the directory is a package rather than an ordinary folder. Packages let you build larger libraries composed of several modules and even subpackages.
@@ -175,6 +179,12 @@ if __name__ == "__main__":
 ```
 
 Now, running `dog.py` directly prints: `TestRex barks: Woof woof!`. If the module is imported into another program, the test code is not executed.
+
+---
+
+[The last programming module covers reading from and writing to files](13_file_handling.md).
+
+---
 
 <!-- add mermaid support for gh pages -->
 <script type="module">

@@ -15,8 +15,8 @@ Projektin aikana nähdään konkreettisesti, miten ohjelmisto rakentuu vähitell
 
 Projektin tekeminen jakautuu kahteen vaiheeseen:
 
-1. Ohjelmoinnin opetuksen ja pienien ohjelmointitehtävien lomassa tehdäään projektia edistäviä tehtäviä, jotka pitää palauttaa palautuspäivään mennessä. Näiden aikataulun näet Oman tehtävistä.
-2. Jakson viimeiset viikot keskitytään oman sovelluksen itsenäiseen jatkokehitykseen ja viimeistellään sovellus. 
+1. Ohjelmoinnin opetuksen ja pienien ohjelmointitehtävien lomassa tehdään projektia edistäviä tehtäviä, jotka pitää palauttaa palautuspäivään mennessä. Näiden aikataulun näet Oman tehtävistä.
+2. Jakson viimeiset viikot keskitytään oman sovelluksen itsenäiseen jatkokehitykseen ja viimeistellään sovellus.
 
 Sovellus pitää palauttaa ohjeiden mukaisesti viimeiseen palautuspäivään mennessä. Jakson viimeisellä viikolla pidetään arviointitilaisuus, jossa opiskelija esittelee työnsä henkilökohtaisesti opettajille.
 
@@ -53,8 +53,8 @@ Tekoälyllä tehdyn projektin maksimipistemäärä 5 p. (arvosana 1).
 - Funktioiden käyttö
   - vähintään 5 kpl: 1 p.
   - hyödynnetään parametreja ja paluuarvoja: 1 p.
-- Luokkien ja olioiden tarkoituksenmukainen käyttö: 1 p. 
-- Bonus: omat toiminnallisuudet: 1 p.  
+- Luokkien ja olioiden tarkoituksenmukainen käyttö: 1 p.
+- Bonus: omat toiminnallisuudet: 1 p.
 
 Vähennykset:
 
@@ -65,13 +65,13 @@ Vähennykset:
 Projektiosuuden arvosana muodostuu pisteiden perusteella seuraavasti:
 
 | Pisteet | Arvosana |
-|---------|----------|
-| 0-4     | 0  |
-| 5       | 1  |
-| 6       | 2  |
-| 7-8     | 3  |
-| 9       | 4  |    
-| 10      | 5  |    
+| ------- | -------- |
+| 0-4     | 0        |
+| 5       | 1        |
+| 6       | 2        |
+| 7-8     | 3        |
+| 9       | 4        |
+| 10      | 5        |
 
 ## Palautus
 

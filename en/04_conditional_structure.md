@@ -10,18 +10,14 @@ programming language. Learning to use them greatly improves a developer's power 
 ## Conditional statements
 
 Let's assume that you enter a café to order a latte. The latte costs 5 euros and you want to pay in cash.
-Now you must determine if you have enough money to buy the latte. This selection event can be expressed
-using pseudo code:
+Now you must determine if you have enough money to buy the latte. This selection event can be expressed using pseudo code:
 
 ```monospace
 if money_in_pocket >= 5
 	buy latte
 ```
 
-The pseudo code shows that the decision is made based on whether a condition is true. The condition in this
-case is that there is at least 5 euros of money. The condition can be true or false: For example, if there were
-7 euros the statement would be `7 >= 5` which is true. On the other hand, if there were only 4.85 euros in the pocket,
-the condition would be `4.85 <= 5` which is false.
+The pseudo code shows that the decision is made based on whether a condition is true. The condition in this case is that there is at least 5 euros of money. The condition can be true or false: For example, if there were 7 euros the statement would be `7 >= 5` which is true. On the other hand, if there were only 4.85 euros in the pocket, the condition would be `4.85 <= 5` which is false.
 
 The program flow can also be described with a flowchart (_flowchart_). A flowchart is a graphical representation of the program's execution path. It is a useful tool for understanding the program's structure. The following shows the flowchart for the selection structure mentioned above:
 
@@ -35,27 +31,19 @@ graph TD
 
 A conditional part of the program (buying the latte) if executed precisely when the condition is true.
 
-In Python, a conditional part of a program is written with an `if` statement. The structure of the statement is
-as follows:
+In Python, a conditional part of a program is written with an `if` statement. The structure of the statement is as follows:
 
 ```monospace
 if(condition):
 	conditionally executed block of code
 ```
 
-In the example above, the condition is a logical expression that can be true or false. Based on the condition,
-the execution proceeds as follows:
+In the example above, the condition is a logical expression that can be true or false. Based on the condition, the execution proceeds as follows:
 
 1. If the condition is true, the conditional block of code is executed.
 2. If the condition is false, the execution will jump to the next statement after the conditional structure.
 
-The expressions inside the conditional block must be indented by one step. In Python, a one-step indentation
-is written by adding four spaces at the beginning of a line. In practice, it is more efficient to press the
-Tab key once instead of writing four spaces. Indentation is important in Python: it expresses the internal
-hierarchy of the program. In this example, the one-step indentation shows which lines of code are part of
-the body of conditional block. In Python it is not only necessary to indent lines correctly but it also
-makes the code clearer and more readable. In this sense Python is different from many other programming
-languages where indenting is optional in terms of the syntax of the language.
+The expressions inside the conditional block must be indented by one step. In Python, a one-step indentation is written by adding four spaces at the beginning of a line. In practice, it is more efficient to press the `Tab` key once instead of writing four spaces. Indentation is important in Python: it expresses the internal hierarchy of the program. In this example, the one-step indentation shows which lines of code are part of the body of conditional block. In Python it is not only necessary to indent lines correctly but it also makes the code clearer and more readable. In this sense Python is different from many other programming languages where indenting is optional in terms of the syntax of the language.
 
 ## Conditionally executed program parts
 
@@ -83,8 +71,7 @@ Enter amount of money: 5
 You can buy a latte.
 ```
 
-This was an important test as handling boundary cases easily leads to programming errors. If we had written the condition
-as `money > 5` by mistake, the latte would not have been bought due to incorrectly working program.
+This was an important test as handling boundary cases easily leads to programming errors. If we had written the condition as `money > 5` by mistake, the latte would not have been bought due to incorrectly working program.
 
 Finally, let's check that the conditional block is not executed when there is not enough money:
 
@@ -99,12 +86,12 @@ You can use the following comparison operators to express conditions in Python:
 
 | Notation | Comparison operator      |
 | -------- | ------------------------ |
-| \>       | greater than             |
-| \<       | less than                |
-| >=       | greater than or equal to |
-| <=       | less than or equal to    |
-| ==       | equal to                 |
-| !=       | not equal to             |
+| `>`      | greater than             |
+| `<`      | less than                |
+| `>=`     | greater than or equal to |
+| `<=`     | less than or equal to    |
+| `==`     | equal to                 |
+| `!=`     | not equal to             |
 
 Logical operators can be chained. The following statement is true when a person's height is at least
 170 but less than 180 cm: `170 <= height < 180`.
@@ -184,16 +171,7 @@ Enter weight (kg): 55
 The medicine can be used.
 ```
 
-If you look at the second `if` statement, you might notice that weight is only specified for people
-whose age is 15, 16 or 17. Others have not been asked for their weight and the variable is not defined.
-However, Python has a feature that can be used here: calculating the value of a logical statement is stopped
-immediately once its value has been determined. If the age is at least 18 years, the left side of the `or`
-statement is true making the whole statement true. In that case the weight information is not needed to
-calculate the value of the logical statement. If the age was less than 18 years, the right-side value will be
-calculated. If the age is less than 15 years, both sides of the statement are false and the whole statement
-is false. The weight information is only read if it is known that the age is at least 15 and less than 18
-years, and in this specific case the weight variable is defined. This Python language feature is called
-short-circuiting.
+If you look at the second `if` statement, you might notice that weight is only specified for people whose age is 15, 16 or 17. Others have not been asked for their weight and the variable is not defined. However, Python has a feature that can be used here: calculating the value of a logical statement is stopped immediately once its value has been determined. If the age is at least 18 years, the left side of the `or` statement is true making the whole statement true. In that case the weight information is not needed to calculate the value of the logical statement. If the age was less than 18 years, the right-side value will be calculated. If the age is less than 15 years, both sides of the statement are false and the whole statement is false. The weight information is only read if it is known that the age is at least 15 and less than 18 years, and in this specific case the weight variable is defined. This Python language feature is called short-circuiting.
 
 ```mermaid
 graph TD
@@ -209,11 +187,9 @@ graph TD
 
 ## Two mutually exclusive options
 
-In the medicine administration example program has a weakness: if use of the medicine is not allowed, the program
-does not print any output. The program would be more beneficial to the user if it always provided a result.
+In the medicine administration example program has a weakness: if use of the medicine is not allowed, the program does not print any output. The program would be more beneficial to the user if it always provided a result.
 
-Let's modify the program by adding a conditional block that runs if the original condition was false. This can be
-done by adding an `else` branch to the `if` statement.
+Let's modify the program by adding a conditional block that runs if the original condition was false. This can be done by adding an `else` branch to the `if` statement.
 
 This is how the `else` branch works:
 
@@ -236,8 +212,7 @@ else:
     print("The medicine cannot be used.")
 ```
 
-The `else` branch in the example is tied to the second `if` statement. In general, an `else` branch is interpreted
-to relate to the last `if` statement that has been indented to the same level as the `else` branch in the program.
+The `else` branch in the example is tied to the second `if` statement. In general, an `else` branch is interpreted to relate to the last `if` statement that has been indented to the same level as the `else` branch in the program.
 
 ```mermaid
 graph TD
@@ -278,12 +253,9 @@ The medicine cannot be used.
 
 ## Multiple options
 
-Lastly, let's look at a situation where there are multiple options that each have their own condition. This can
-be done with `elif` branches. The word is short for "else if".
+Lastly, let's look at a situation where there are multiple options that each have their own condition. This can be done with `elif` branches. The word is short for "else if".
 
-The following program asks the user's age and notifies them whether they are retired, working-age, in school or
-a small child. (The age limits here are simplified and expect that a certain period in people's lives start at a
-specific age, although that is not true in real life.)
+The following program asks the user's age and notifies them whether they are retired, working-age, in school or a small child. (The age limits here are simplified and expect that a certain period in people's lives start at a specific age, although that is not true in real life.)
 
 ```python
 age = int(input("Enter your age: "))
@@ -322,7 +294,7 @@ be unnecessary and create a new possibility for a programming error.
 
 ---
 
-**Next:** [While loops](04_While_Loops.md)
+**Next:** [While loops](05_while_loop.md)
 
 <!-- add mermaid support for gh pages -->
 <script type="module">

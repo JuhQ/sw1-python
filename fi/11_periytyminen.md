@@ -32,7 +32,7 @@ for t in työntekijät:
 
 Ohjelma luo kaksi työntekijä: Viivin ja Ahmedin, lisää heidät työntekijälistaan ja tulostaa listan sisällön:
 
-``` monospace
+```monospace
 1: Viivi Virta
 2: Ahmed Habib
 ```
@@ -174,13 +174,13 @@ class Polkupyörä(Kulkuneuvo, Urheiluväline):
     def __init__(self, nopeus, paino, vaihteet):
         Kulkuneuvo.__init__(self, nopeus)
         Urheiluväline.__init__(self, paino)
-        
+
         self.vaihteet = vaihteet
 
 pp = Polkupyörä(45, 18.7, 3)
-print (pp.vaihteet)
-print (pp.nopeus)
-print (pp.paino)
+print(pp.vaihteet)
+print(pp.nopeus)
+print(pp.paino)
 ```
 
 Luomme Polkupyörä-olion, josta tulostamme vaihteiden lukumäärän, nopeuden ja painon. Vaihteiden lukumäärä on määritetty `Polkupyörä`-luokassa. Nopeus periytyy `Kulkuneuvo`-luokasta, ja paino periytyy `Urheiluväline`-luokasta. Ohjelma tuottaa seuraavan tulosteen:
@@ -191,7 +191,7 @@ Luomme Polkupyörä-olion, josta tulostamme vaihteiden lukumäärän, nopeuden j
 18.7
 ```
 
-Tässä tapauksessa emme voi `Polkupyörä`-luokan alustajasta viitata molempien yliluokkien alustajin `super`-funktiolla tähän tapaan:
+Tässä tapauksessa emme voi `Polkupyörä`-luokan alustajasta viitata molempien yliluokkien alustajien `super`-funktiolla tähän tapaan:
 
 ```python
 # Toimimattomat alustajien kutsut

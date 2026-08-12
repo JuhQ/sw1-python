@@ -3,7 +3,7 @@
 Versionhallintajärjestelmä on sovellus, joka tallentaa ja hallitsee ohjelmistoprojektin eri versioita. Sen keskeisiä ominaisuuksia ja hyötyjä on mm.:
 
 - Tarkka muutosseuranta, jonka avulla voi vastata kysymyksiin:
-  - Mitä on muuttunut edellisestä versiosta? 
+  - Mitä on muuttunut edellisestä versiosta?
   - Miksi muutos tehtiin?
   - Milloin se tapahtui?
   - Kuka sen teki?
@@ -32,7 +32,7 @@ Tallennuspisteitä kutsutaan nimillä "commit", "revision" tai "version" hieman 
 
 Kansiota, johon kaikki työtiedostot, niiden versiot, haarat ja muut versionhallinnan metatiedot on tallennettu, kutsutaan tietovarastoksi tai yleisemmin puhekielessä repositorioksi.
 
-Seuraavassa kaaviossa havannoillistetaan reposoritoriota jossa on useampi rinnakkainen kehityshaara:
+Seuraavassa kaaviossa havannoillistetaan repositoriota jossa on useampi rinnakkainen kehityshaara:
 
 ```mermaid
 gitGraph
@@ -62,13 +62,13 @@ gitGraph
     commit id: "feature2: kolmas uusi ominaisuus"
 ```
 
-Haarojen yhteenliittämisestä käytetään termiä _merge_. Käytännössä uusia kehityshaaroja voi luoda minkä tahan olemassa olevan haaran pohjalta, ja kehityshaaroja voi myös liittää toisiinsa vapaasti. 
+Haarojen yhteenliittämisestä käytetään termiä _merge_. Käytännössä uusia kehityshaaroja voi luoda minkä tahan olemassa olevan haaran pohjalta, ja kehityshaaroja voi myös liittää toisiinsa vapaasti.
 
 Jos yhteenliitettävissä haaroissa on muokattu samoja tiedostoja siten, että muutokset ovat keskenään ristiriidassa, syntyy konflikti (_conflict_). Tällöin kehittäjän, joka liittämisen tekee täytyy käydä muutokset läpi ja ratkaista ristiriidat koodista "käsin" ennen kuin lopullinen yhteenliitetty versio voidaan tallentaa.
 
-On huomionarvoista, että versionhallintatyökalu ei kykene itsenäisesti arvaaman, miten ristiriidassa olevat muutokset tulisi yhdistää. Tämä voisi johtaa helposti virheisiin ohjelman toiminnassa. 
+On huomionarvoista, että versionhallintatyökalu ei kykene itsenäisesti arvaamaan, miten ristiriidassa olevat muutokset tulisi yhdistää. Tämä voisi johtaa helposti virheisiin ohjelman toiminnassa.
 
-Konfliktien ratkaisemisen helpottamiseksi löytyy monia osin automatisoituja työkaluja (_merge tools_), mutta viimeisimmästä muutoksesta on vastuussa haarojen liitokset tehnyt kehittäjä. Konfliktien syntyminen ja ratkominen on täysin luonnollinen osa ohjelmistokehityksen tiimityötä. 
+Konfliktien ratkaisemisen helpottamiseksi löytyy monia osin automatisoituja työkaluja (_merge tools_), mutta viimeisimmästä muutoksesta on vastuussa haarojen liitokset tehnyt kehittäjä. Konfliktien syntyminen ja ratkominen on täysin luonnollinen osa ohjelmistokehityksen tiimityötä.
 
 Aktiivista kehityshaaraa voi vaihtaa _checkout_-toiminnolla. Käytännössä tämä tarkoittaa sitä, että kun koodari vaihtaa toiseen kehityshaaraan, versionhallintatyökalu korvaa projektikansiossa olevat nykyiset työtiedostot valitun version tiedostoilla repositoriosta.
 
@@ -94,7 +94,7 @@ Git on lähtökohtaisesti käyttöjärjestelmän komentoriviltä ajettava ohjelm
 
 Komentorivin käyttö vaatii alkuun hieman perehtymistä, mutta auttaa ymmärtämään Gitin toimintaa syvällisemmin. Jos git-komentojen käyttö on hallussa, on myös graafisten työkalujen toiminnan ymmärtäminen ja käyttö loogisempaa.
 
-Git repositorio luodaan ajamalla `git init` -komento sen kansion sisällä, jossa koko ohjelmointiprojekti sijaitsee. Tämä voidaan tehdä myös koodieditorin työkalulla. Jatkossa git-komentoesimerkeissä oletetaan, että ne suoritetaan aina tässä samassa kansiossa. 
+Git repositorio luodaan ajamalla `git init` -komento sen kansion sisällä, jossa koko ohjelmointiprojekti sijaitsee. Tämä voidaan tehdä myös koodieditorin työkalulla. Jatkossa git-komentoesimerkeissä oletetaan, että ne suoritetaan aina tässä samassa kansiossa.
 
 Tämän jälkeen Gitin toiminnan perusperiaate on, että tiedostoilla on kolme eräänlaista tilaa tai paikkaa:
 
@@ -110,11 +110,11 @@ Käytännön työnkulku etenee yksinkertaisimmillaan seuraavasti:
 1. Kehittäjä kehittää ohjelmaa, eli luo/poistaa ja tekee muutoksia tiedostoihin työtilassa.
 1. Kehittäjä valitsee, mitkä muutokset haluaa tallentaa versionhallintaan, ja lisää ne staging area:lle komennolla [`git add`](https://www.geeksforgeeks.org/git/what-is-git-add/) joko tiedosto kerrallaan `git add <tiedosto(tai lista)>`, esimerkiksi `git add main.py kissa.py` tai vaikka koko kansio kerralla: `git add .`.
    - Tiedostot, jotka on lisätty staging area:lle, ovat valmiina tallennettavaksi seuraavaan committiin.
-   - Kaikkia muutoksia ei tarvitse tallentaa seuraavaan versioon, vaan kehittäjä voi valita, mitkä muutokset haluaa tallentaa ja mitkä jättää vielä keskeneräisinä työtilaan.   
+   - Kaikkia muutoksia ei tarvitse tallentaa seuraavaan versioon, vaan kehittäjä voi valita, mitkä muutokset haluaa tallentaa ja mitkä jättää vielä keskeneräisinä työtilaan.
 1. Kehittäjä tallentaa staging area:lla olevat muutokset repositorioon (`.git/`-kansio) luomalla uuden tallennuspisteen [`commit`](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)-komennolla: `git commit -m "commit-viesti"`. Commit-viestissä kuvataan mahdollisimman selkeästi, mitä muutoksia uusi tallennuspiste sisältää.
-1. Kehittäjä jatkaa työskentelyä tekemällä uusia muutoksia työtilassa, ja toistaa edelliset vaiheet alusta asti tarpeen mukaan. 
+1. Kehittäjä jatkaa työskentelyä tekemällä uusia muutoksia työtilassa, ja toistaa edelliset vaiheet alusta asti tarpeen mukaan.
 
-**Huom:** Näet aina repositorion tilanteen `git status` -komennolla. Tätä voi käyttää vaikka jokaisen edellä mainittun komennon välissä, jotta näkee mitä repositoriossa on tapahtumassa. 
+**Huom:** Näet aina repositorion tilanteen `git status` -komennolla. Tätä voi käyttää vaikka jokaisen edellä mainittuun komennon välissä, jotta näkee mitä repositoriossa on tapahtumassa.
 
 Jos kehittäjä ei halua muokata alkuperäistä koodia suoraan, vaan jatkaa kehittämistä säästäen alkuperäisen koodin versiohistorioineen koskemattomana, hän voi luoda rinnalle uuden kehityshaaran komennolla [`git branch`](https://www.atlassian.com/git/tutorials/using-branches), esim. `git branch uusi-ominaisuus`.
 
@@ -124,7 +124,7 @@ Tämän jälkeen kaikki tehdyt commitit tallentuvat vain uuteen haaraan. Takaisi
 
 Kun kehityshaarassa kehitetty uusi ominaisuus on valmis, se voidaan liittää takaisin pääkehityshaaraan komennolla [`git merge`](https://www.atlassian.com/git/tutorials/using-branches/git-merge), esim. `git merge uusi-ominaisuus`. Tällöin pääkehityshaaraan tallentuvat myös kaikki ne commitit, jotka on tehty uudessa haarassa.
 
-Haaroja voidaan liittää toisiinsa ristiin rastiin vapaasti, ja `git merge` liittää valitun haaran siihen haaraan, joka on aktiivisena. Eli kun halutaan liittää `uusi-ominaisuus` päähaaraan `main`, kannattaa ensin varmistaa, että se on aktiivinen (`git status` tai `git checkout main`). 
+Haaroja voidaan liittää toisiinsa ristiin rastiin vapaasti, ja `git merge` liittää valitun haaran siihen haaraan, joka on aktiivisena. Eli kun halutaan liittää `uusi-ominaisuus` päähaaraan `main`, kannattaa ensin varmistaa, että se on aktiivinen (`git status` tai `git checkout main`).
 
 VS Code -editorissa haarojen luominen ja vaihtaminen onnistuu helposti myös vasemman alalaidan Git-työkalun kautta, eikä komentorivin käyttö ole välttämätöntä.
 
@@ -138,7 +138,7 @@ Muita käteviä Git-komentoja ovat mm.:
 - [`git diff`](https://www.geeksforgeeks.org/git/git-diff/): muutosten vertailu, esimerkiksi työtilassa olevien tiedostojen ja repositoriossa olevien tiedostojen välillä, tai kahden commitin välillä
 - `git reset`: staging arean tyhjentäminen, paluu aiempaan versioon, uusien muutosten hylkääminen, käytä harkiten!
 
-Git on todella monipuolinen työkalu ja tarpeellisia toimintoja voi ja kannattaa etsiä ja opetella tarpeen mukaan itsekin. Tällä jaksolla otetaan vain pintaraapaisu tärkeimpiin ominaisuuksiin. 
+Git on todella monipuolinen työkalu ja tarpeellisia toimintoja voi ja kannattaa etsiä ja opetella tarpeen mukaan itsekin. Tällä jaksolla otetaan vain pintaraapaisu tärkeimpiin ominaisuuksiin.
 
 #### `.git/`-kansio
 

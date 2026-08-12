@@ -50,9 +50,9 @@ print("Hyvää\nhuomenta")
 
 ## Syötteen luku, muuttuja ja sijoituslause
 
-Edellä kuvatulla tavalla voidaa tehdä yksinkertaisia ohjelmia, jotka tulostavat jokaisella suorituskerralla saman merkkijonon. Yleensä halutaan, että ohjelma saa syötteitä käyttäjältä ja käyttää niitä hyödykseen.
+Edellä kuvatulla tavalla voidaan tehdä yksinkertaisia ohjelmia, jotka tulostavat jokaisella suorituskerralla saman merkkijonon. Yleensä halutaan, että ohjelma saa syötteitä käyttäjältä ja käyttää niitä hyödykseen.
 
-Kirjoitetaan nyt ohjelma, joka kysyy käyttäjältä tämän nimen ja tervehtiin sen jälkeen käyttäjää nimeltä. Tämä onnistuu seuraavasti:
+Kirjoitetaan nyt ohjelma, joka kysyy käyttäjältä tämän nimen ja tervehtii sen jälkeen käyttäjää nimeltä. Tämä onnistuu seuraavasti:
 
 ```python
 käyttäjä = input('Anna nimesi: ')
@@ -63,13 +63,13 @@ Käyttäjän syöte luetaan sisäänrakennetulla `input`-funktiolla. Funktio saa
 
 Sisäänrakennettu input-funktio odottaa käyttäjän syötettä näppäimistöltä. Käyttäjä päättää syötteen Enter-näppäimellä. Kun syöte on annettu, input-funktion arvoksi syntyy syötettä vastaava merkkijono.
 
-Input-funktion arvo, toisin sanoen sen palauttama merkkijono, on laitettava talteen, jotta sitä voidaan käyttää myöhemmin ohjelmassa. Tätä varten se tallennetaan muuttujaan (*variable*). Tässä tapauksessa muuttuja on nimeltään käyttäjä. Käyttäjän antama syöte tallentuu tietokoneen muistiin, ja se saadaan haettua sieltä muuttujan nimen avulla. Muuttujan nimi on siis ikäänkuin kahva tai nimilappu, jonka avulla arvo voidaan muistista hakea.
+Input-funktion arvo, toisin sanoen sen palauttama merkkijono, on laitettava talteen, jotta sitä voidaan käyttää myöhemmin ohjelmassa. Tätä varten se tallennetaan muuttujaan (_variable_). Tässä tapauksessa muuttuja on nimeltään käyttäjä. Käyttäjän antama syöte tallentuu tietokoneen muistiin, ja se saadaan haettua sieltä muuttujan nimen avulla. Muuttujan nimi on siis ikäänkuin kahva tai nimilappu, jonka avulla arvo voidaan muistista hakea.
 
 Muuttujalle annetaan arvo sijoituslauseessa. Sijoituslauseen tunnistaa yhtäsuuruusmerkistä (=). Sen vasemmalla puolella on sen muuttujan nimi, jolle arvo annetaan. Oikealle puolelle kirjoitetaan lauseke, jonka arvo tulee muuttujan arvoksi.
 
 ### Muuttujista ja sijoitusoperaattorista tarkemmin
 
-Ohjelmoinnissa **muuttujien** voidaan ajatella olevan kuin nimettyjä laatikoita, joihin voidaan tallentaa tietoa. Tämä tieto voi olla numeroita, tekstiä tai monimutkaisempia rakenteita. Kun tallennettua tietoa tervitaan myöhemmin ohjelmassa, se saadaan käyttöön yksinkertaisesti viittaamalla laatikkoon sen nimellä.
+Ohjelmoinnissa **muuttujien** voidaan ajatella olevan kuin nimettyjä laatikoita, joihin voidaan tallentaa tietoa. Tämä tieto voi olla numeroita, tekstiä tai monimutkaisempia rakenteita. Kun tallennettua tietoa tarvitaan myöhemmin ohjelmassa, se saadaan käyttöön yksinkertaisesti viittaamalla laatikkoon sen nimellä.
 
 Tarkastellaan esimerkkinä ohjelmaa, jossa halutaan tallentaa tieto (jonkun asian) väristä. Tätä tarkoitusta varten luodaan muuttuja nimeltä `väri` ja tallennetaan sen arvoksi esimerkiksi `"sininen"` seuraavasti:
 
@@ -83,7 +83,7 @@ Muuttujien nimet voivat sisältää kirjaimia, numeroita ja alaviivoja, mutta ne
 
 Sijoitusoperaattori (`=`) kirjoitetaan siis yhdellä yhtäsuuruusmerkillä (`=`). Sen tehtävä on asettaa oikealla puolella olevan lausekkeen arvo vasemmalla puolella olevan muuttujan arvoksi, toisin sanoen tallentaa arvo muuttujalle varattuun laatikkoon (muistipaikkaan).
 
-Edellä olevaa esimerkkilausen toimintaa voi hahmottaa seuraavasti:
+Edellä olevaa esimerkkilauseen toimintaa voi hahmottaa seuraavasti:
 
 ```txt
   Muuttuja       Sijoitusoperaattori      Arvo
@@ -94,7 +94,7 @@ Edellä olevaa esimerkkilausen toimintaa voi hahmottaa seuraavasti:
 
 Kun Python suorittaa rivin `väri = "sininen"`, se tekee seuraavat askeleet:
 
-1. Lasketaan sijoitusoperaattorin oikealla puolella olevan lausekkeen arvo ja tallennetaan se muistiin. Tässä tapauksessa lausekkeen arvo on yksinkertainen merkkijonoliteraali `"sininen"`, mutta lauseke voi sisältaa myös monimutkaisempia toimintoja, kuten alun esimerkin syötteen luku input-funktiolla..
+1. Lasketaan sijoitusoperaattorin oikealla puolella olevan lausekkeen arvo ja tallennetaan se muistiin. Tässä tapauksessa lausekkeen arvo on yksinkertainen merkkijonoliteraali `"sininen"`, mutta lauseke voi sisältää myös monimutkaisempia toimintoja, kuten alun esimerkin syötteen luku input-funktiolla..
 2. Luodaan muuttuja nimeltä `väri` ja varataan sille muistipaikka. Jos muuttuja `väri` on luotu jo aiemmin ohjelmassa, käytetään olemassa olevaa muistipaikkaa.
 3. Tallennetaan kohdassa 1 laskettu arvo `"sininen"`muuttujan `väri` arvoksi. Jos muuttuja ole luotu aiemmin, sen aiempi arvo ylikirjoittuu ja ei ole enää tiedossa.
 
@@ -143,15 +143,15 @@ Python-kielessä muuttujia ei tarvitse etukäteen esitellä, eikä niiden tyyppi
 
 Python-kielessä on kolme muuttujan perustyyppiä (primitiivitietotyypit):
 
-- merkkijono (*string*)
-- luku (*number*), joka voi olla kokonaisluku (int), liukuluku (float) tai kompleksiluku (complex)
-- totuusarvo (*boolean*), joka voi olla `True` tai `False`
+- merkkijono (_string_)
+- luku (_number_), joka voi olla kokonaisluku (int), liukuluku (float) tai kompleksiluku (complex)
+- totuusarvo (_boolean_), joka voi olla `True` tai `False`
 
 Lisäksi muuttujiin voidaan sijoittaa muita Pythonin tietorakenteita, kuten:
 
-- lista (*list*)
-- monikko (*tuple*)
-- sanakirja (*dictionary*)
+- lista (_list_)
+- monikko (_tuple_)
+- sanakirja (_dictionary_)
 
 Lisäksi muuttuja voi olla tyypiltään viittaus olioon. Listoihin, monikkoon, sanakirjaan ja olioviittaukseen palataan myöhemmin kurssilla. Tarkastellaan seuraavaksi luku- ja merkkijonotietotyyppejä tarkemmin.
 
@@ -193,7 +193,7 @@ Esimerkkiohjelma tuottaa seuraavan tulosteen:
 
 Merkkijono on tietotyyppi, jolla esitetään tekstiä. Se on peräkkäinen jono merkkejä, kuten kirjaimia, numeroita ja välimerkkejä. Pythonissa merkkijonoja luodaan ympäröimällä teksti joko yksinkertaisilla (`'`) tai kaksinkertaisilla (`"`) lainausmerkeillä. Tämä antaa joustavuutta, jos merkkijonon itsensä sisällä on lainausmerkkejä.
 
-**Esimerkkejä merkkijononoista:**
+**Esimerkkejä merkkijonoista:**
 
 ```python
 nimi = "Petra"  # Kaksinkertaisilla lainausmerkeillä
@@ -206,9 +206,9 @@ lause2 = 'Bob vastasi: "Moi!"'  # Yksinkertaiset lainausmerkit, kaksinkertaiset 
 
 #### Merkkien sisäinen esitystapa
 
-Kaikki tietokoneen tallentamat ja käsittelemät merkit muunnetaan tietokoneen "ymmärtämiksi" numeerisiksi koodeiksi. Pythonissa kaikki merkit esitetään Unicode-merkkeinä. *Unicode* on standardi, joka määrittelee useimmille maailman kirjoitusmerkeille omat merkkikoodinsa.
+Kaikki tietokoneen tallentamat ja käsittelemät merkit muunnetaan tietokoneen "ymmärtämiksi" numeerisiksi koodeiksi. Pythonissa kaikki merkit esitetään Unicode-merkkeinä. _Unicode_ on standardi, joka määrittelee useimmille maailman kirjoitusmerkeille omat merkkikoodinsa.
 
-*Unicode*-merkkejä sisältävää tekstiä voidaan tallentaa tietokoneelle käyttäen eri koodaustapoja eli merkistöjä, esimerkiksi *UTF-8*. Merkistö on joukko sääntöjä sille, miten tämä muunnos tehdään. Yksinkertaisimmillaan merkistö on lista merkeistä ja niitä vastaavista numeroista, kuten esimerkiksi vanha ja rajoittunut *ASCII*-merkistö.
+_Unicode_-merkkejä sisältävää tekstiä voidaan tallentaa tietokoneelle käyttäen eri koodaustapoja eli merkistöjä, esimerkiksi _UTF-8_. Merkistö on joukko sääntöjä sille, miten tämä muunnos tehdään. Yksinkertaisimmillaan merkistö on lista merkeistä ja niitä vastaavista numeroista, kuten esimerkiksi vanha ja rajoittunut _ASCII_-merkistö.
 
 ## Laskutoimitukset ja tyyppimuunnosfunktiot
 
@@ -244,7 +244,7 @@ Toisinaan halutaan säädellä sitä, kuinka tulostus muotoillaan: monenko desim
 
 Tämä voidaan toteuttaa käyttämällä ns. muotoilumerkkijonoliteraalia, jossa tulostettava merkkijono sisältää muotoilukoodeja.
 
-Tarkastellaan asiaa esimerkin kautta. Vaihdamme edellisen esimerkin tulostuslauseen sellaiseksi, että Celsius-lämpötila näytetään aina kahden desimaalin tarkkuudellla:
+Tarkastellaan asiaa esimerkin kautta. Vaihdamme edellisen esimerkin tulostuslauseen sellaiseksi, että Celsius-lämpötila näytetään aina kahden desimaalin tarkkuudella:
 
 ```python
 print(f"Lämpötila Celsius-asteina: {celsius:6.2f}")
@@ -284,7 +284,7 @@ Lopuksi mainittakoon, että Python tarjoaa useita tapoja tulostuksen muotoiluun.
 
 1. `str.format()`-metodin käyttö
 2. muotoilumerkkijonon ja lausekeluettelon käyttö print-funktiossa (ns. prosenttinotaatio)
-3. mallimerkkijonon (*template string*) käyttö
+3. mallimerkkijonon (_template string_) käyttö
 
 Edellä lueteltuja vaihtoehtoisia tapoja ei käsitellä tässä. Aiheesta löytyy lisätietoa Python 3 -kielen dokumentaatiosta: <https://docs.python.org/3/tutorial/inputoutput.html>
 

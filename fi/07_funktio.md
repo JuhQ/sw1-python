@@ -13,7 +13,7 @@ Funktioita käyttävä ohjelma jakautuu
 - pääohjelmaan eli siihen ohjelman osaan, joka sijaitsee funktioiden ulkopuolella
 - funktioihin.
 
-Pääohjelma voi kutsua funktioita.  Myös funktiot voivat kutsua toisia funktioita. Kutsuminen tarkoittaa sitä, että ohjelman suoritus siirtyy kutsuttavaan funktioon. Kun kutsuttava funktio on kokonaan suoritettu, palaa suoritus alkuperäiseen sijaintiin, funktion kutsua seuraavaan lauseeseen.
+Pääohjelma voi kutsua funktioita. Myös funktiot voivat kutsua toisia funktioita. Kutsuminen tarkoittaa sitä, että ohjelman suoritus siirtyy kutsuttavaan funktioon. Kun kutsuttava funktio on kokonaan suoritettu, palaa suoritus alkuperäiseen sijaintiin, funktion kutsua seuraavaan lauseeseen.
 
 Kirjoitetaan ensimmäinen funktio:
 
@@ -31,7 +31,7 @@ Kaarisulkeiden jälkeen lisätään kaksoispiste. Kaksoispisteen jälkeen kirjoi
 
 Funktion runkoon kuuluvat lauseet on kirjoitettava yhden askeleen verran sisennettyinä.
 
-Funktion suoritus päättyy `return`-lauseeseen tai koodilohkon loppuun. Return-lauseella voidaan palauttaa paluuarvo, jos sellainen on. Tässä sellaista ei ole, joten myös `return`-lauseen voisi jättää pois.  Palataan paluuarvoon myöhemmin.
+Funktion suoritus päättyy `return`-lauseeseen tai koodilohkon loppuun. Return-lauseella voidaan palauttaa paluuarvo, jos sellainen on. Tässä sellaista ei ole, joten myös `return`-lauseen voisi jättää pois. Palataan paluuarvoon myöhemmin.
 
 Samaan ohjelmaan voidaan kirjoittaa useita funktioita. Yllä olevassa esimerkissä funktioita on vain yksi.
 
@@ -75,12 +75,12 @@ Tarkastellaan esimerkkiohjelmaa:
 ```python
 def tervehdi(kerrat):
     for i in range(kerrat):
-        print ("Hyvää päivää " + str(i+1) + ". kerran")
+        print("Hyvää päivää " + str(i+1) + ". kerran")
     return
 
-print ("Päivä alkaa tervehdyksillä.")
+print("Päivä alkaa tervehdyksillä.")
 tervehdi(5)
-print ("Tervehditään lisää.")
+print("Tervehditään lisää.")
 tervehdi(2)
 ```
 
@@ -126,7 +126,7 @@ vaihda()
 print("Pääohjelmassa lopuksi: " + kaupunki)
 ```
 
-Ohjelma tulostaa seuraaavan tulosteen:
+Ohjelma tulostaa seuraavan tulosteen:
 
 ```monospace
 Pääohjelmassa aluksi: Helsinki
@@ -150,7 +150,7 @@ Tarkastellaan esimerkkiohjelmaa:
 ```python
 def tervehdi(tervehdys, kerrat):
     for i in range(kerrat):
-        print (tervehdys + " " + str(i+1) + ". kerran")
+        print(tervehdys + " " + str(i+1) + ". kerran")
     return
 
 tervehdi("Moi", 3)
@@ -206,7 +206,7 @@ Funktiolle voidaan antaa parametrina lista. Seuraavassa esimerkissä inventaario
 def inventaario(tavarat):
     print("Sinulla on seuraavat tavarat:")
     for t in tavarat:
-        print ("- " + t)
+        print("- " + t)
     return
 
 reppu = ["Vesipullo", "Kartta", "Kompassi"]
@@ -235,7 +235,7 @@ Muutetaan nyt ohjelmaa hieman. Muokataan aliohjelmaa siten, että se tyhjentää
 def inventaario(tavarat):
     print("Sinulla on seuraavat tavarat:")
     for t in tavarat:
-        print ("- " + t)
+        print("- " + t)
     # Tavarat katoavat inventaariossa!
     tavarat.clear()
     return
@@ -269,45 +269,45 @@ Pythonin funktioilla on lisäksi seuraavia ominaisuuksia:
 
 - Vaihtuvan mittaiset argumenttijonot. Argumentteja voidaan antaa kutsukerrastasta toiseen vaihteleva määrä. Funktio voi käsitellä saadut arvot listana:
 
-    ```python
-    def summa(*luvut):
-        s = 0
-        for l in luvut:
-            s += l
-        return s
+  ```python
+  def summa(*luvut):
+      s = 0
+      for l in luvut:
+          s += l
+      return s
 
-    print("Summa on", summa(1, 2, 3))
-    ```
+  print("Summa on", summa(1, 2, 3))
+  ```
 
-    Tässä esimerkissä funktio `summa` saa parametreina vaihtelevan määrän lukuja, jotka se käsittelee listana `luvut`. Ohjelma tulostaa:
+  Tässä esimerkissä funktio `summa` saa parametreina vaihtelevan määrän lukuja, jotka se käsittelee listana `luvut`. Ohjelma tulostaa:
 
-    ```monospace
-    Summa on 6
-    ```
+  ```monospace
+  Summa on 6
+  ```
 
 - Parametrien välittäminen avainsanojen avulla. Ohjelmoija voi antaa parametrien arvot (nimi = arvo)-pareina, jolloin niiden järjestyksellä ei ole väliä. Parametreille voi antaa funktion määrityksessä myös oletusarvot.
 
-    ```python
-    def tervehdi(tervehdys="Hei", kerrat=1):
-        for i in range(kerrat):
-            print (tervehdys + " " + str(i+1) + ". kerran")
-        return
-        
-    tervehdi()
-    tervehdi("Terve", 3)
-    tervehdi(kerrat=2, tervehdys="Moro")
-    ```
+  ```python
+  def tervehdi(tervehdys="Hei", kerrat=1):
+      for i in range(kerrat):
+          print(tervehdys + " " + str(i+1) + ". kerran")
+      return
 
-    Ohjelma tulostaa:
+  tervehdi()
+  tervehdi("Terve", 3)
+  tervehdi(kerrat=2, tervehdys="Moro")
+  ```
 
-    ```monospace
-    Hei 1. kerran
-    Terve 1. kerran
-    Terve 2. kerran
-    Terve 3. kerran
-    Moro 1. kerran
-    Moro 2. kerran
-    ```
+  Ohjelma tulostaa:
+
+  ```monospace
+  Hei 1. kerran
+  Terve 1. kerran
+  Terve 2. kerran
+  Terve 3. kerran
+  Moro 1. kerran
+  Moro 2. kerran
+  ```
 
 Lisäksi Python-tukee anonyymejä funktioita eli lambda-funktioita. Tällöin määritetään vain kaava tai sääntö, jolla paluuarvo tuotetaan ilman, että kirjoitetaan varsinaista funktiota. Lambda-funktioita käsitellään myöhemmin.
 

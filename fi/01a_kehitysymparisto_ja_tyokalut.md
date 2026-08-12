@@ -4,11 +4,11 @@ Tervetuloa ohjelmoimaan Python-ohjelmointia Metropolia Ammattikorkeakoulussa!
 
 ## Käyttöjärjestelmä
 
-Ennen kuin aloitetaan varsinainen ohjelmointi, on tärkeää ymmärtää ensin, miten tietokone toimii käyttäjän näkökulmasta. Tietokoneen käyttöjärjestelmällä (_operating system, OS_) on tässä keskeinen rooli. 
+Ennen kuin aloitetaan varsinainen ohjelmointi, on tärkeää ymmärtää ensin, miten tietokone toimii käyttäjän näkökulmasta. Tietokoneen käyttöjärjestelmällä (_operating system, OS_) on tässä keskeinen rooli.
 
 Käyttöjärjestelmä on ohjelmisto, joka toimii välikerroksena käyttäjän, ohjelmien ja tietokoneen laitteiston välillä. Windows, macOS ja Linux ovat yleisimpiä käyttöjärjestelmiä, jotka huolehtivat siitä, että ohjelmat voidaan käynnistää, tiedostoja voidaan käsitellä ja laitteet, kuten näppäimistö ja näyttö, toimivat odotetusti ohjelmien kanssa.
 
-Kun kirjoitetaan ja suoritetaan esimerkiksi Python-ohjelmointikiellä tehty ohjelma, käyttöjärjestelmä on se, joka käynnistää ohjelman ja hallitsee sen suoritusta.
+Kun kirjoitetaan ja suoritetaan esimerkiksi Python-ohjelmointikielellä tehty ohjelma, käyttöjärjestelmä on se, joka käynnistää ohjelman ja hallitsee sen suoritusta.
 
 ```mermaid
 flowchart TB
@@ -61,9 +61,9 @@ Kun puhutaan tiedoston sijainnista, käytetään käsitettä polku (_path_). Pol
 
 Esimerkiksi `C:\Users\username\documents\file1.txt` on polku, joka kertoo, että `file1.txt`-tiedosto sijaitsee `documents`-kansiossa, joka puolestaan on `username`-kansiossa, joka on `Users`-kansiossa C-asemalla (Windows). MacOS- ja Linux-järjestelmissä polut näyttävät hieman erilaisilta, esimerkiksi `/home/username/documents/file1.txt`.
 
-Yllä olevia esmerkkejä kutsutaan absoluuttisiksi poluiksi, koska ne alkavat juurikansiosta (Windowsissa C:\, Linuxissa /). Ohjelmoinnissa käytetään usein myös suhteellisia polkuja, jotka määritellään suhteessa ohjelman nykyiseen sijaintiin. Esimerkiksi `./data/file1.txt` tarkoittaa, että `file1.txt`-tiedosto sijaitsee `data`-kansiossa, joka on samassa kansiossa kuin ohjelma itse.
+Yllä olevia esimerkkejä kutsutaan absoluuttisiksi poluiksi, koska ne alkavat juurikansiosta (Windowsissa C:\, Linuxissa ja Macissa /). Ohjelmoinnissa käytetään usein myös suhteellisia polkuja, jotka määritellään suhteessa ohjelman nykyiseen sijaintiin. Esimerkiksi `./data/file1.txt` tarkoittaa, että `file1.txt`-tiedosto sijaitsee `data`-kansiossa, joka on samassa kansiossa kuin ohjelma itse.
 
-Vaikka käyttöjärjestelmät tukevat nykyään kirjainten ja numeroiden lisäksi välilyöntejä, ääkkösellisiä merkkejä ja erikoismerkkejä tiedostonimissä, on hyvä käytäntö välttää näitä ohjelmointiprojekteissa. Erityisesti välilyöntejä ja erikoismerkkejä, kuten `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `(`, `)`, `{`, `}`, `[`, `]`, `|`, `\`, `/`, `:`, `;`, `"`, `'` ja `< >` kannattaa välttää, koska ne voivat aiheuttaa ongelmia eri ympäristöissä ja työkaluissa. Yleisesti ottaen on hyvä käytäntö käyttää vain kirjaimia, numeroita, alaviivoja (_) ja väliviivoja (-) tiedostojen nimissä. 
+Vaikka käyttöjärjestelmät tukevat nykyään kirjainten ja numeroiden lisäksi välilyöntejä, ääkkösellisiä merkkejä ja erikoismerkkejä tiedostonimissä, on hyvä käytäntö välttää näitä ohjelmointiprojekteissa. Erityisesti välilyöntejä ja erikoismerkkejä, kuten `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `(`, `)`, `{`, `}`, `[`, `]`, `|`, `\`, `/`, `:`, `;`, `"`, `'` ja `< >` kannattaa välttää, koska ne voivat aiheuttaa ongelmia eri ympäristöissä ja työkaluissa. Yleisesti ottaen on hyvä käytäntö käyttää vain kirjaimia, numeroita, alaviivoja (\_) ja väliviivoja (-) tiedostojen nimissä.
 
 Kannattaa muistaa myös, että pieni kirjain on eri merkki kuin vastaava iso kirjain. Esimerkiksi `file1.txt` ja `File1.txt` ovat eri tiedostoja monissa järjestelmissä.
 
@@ -81,9 +81,9 @@ Ohjelmistokehittimen asennusta ja käyttöä käsitellään tarkemmin [seuraavas
 
 ### Tekoälyavustimet
 
-Työkalut, kuten Github Copilot, Claude Code ja Cursor ovat viime vuosina yleistyneet ohjelmistokehityksen apuvälineinä. Ne hyödyntävät kehittyneitä kielimalleja ymmärtääkseen kirjoitettua koodia ja tarjotakseen ehdotuksia koodin täydentämiseen ja virheiden korjaamiseen. Niillä voi jopa kehittää kokonaisia ohjelmia ymmärtämättä itse ohjelmointikielestä juuri mitään.
+Työkalut, kuten GitHub Copilot, Claude Code ja Cursor ovat viime vuosina yleistyneet ohjelmistokehityksen apuvälineinä. Ne hyödyntävät kehittyneitä kielimalleja ymmärtääkseen kirjoitettua koodia ja tarjotakseen ehdotuksia koodin täydentämiseen ja virheiden korjaamiseen. Niillä voi jopa kehittää kokonaisia ohjelmia ymmärtämättä itse ohjelmointikielestä juuri mitään.
 
-**Oikein käytettynä** tekoälyavustimet nopeuttavat ohjelmointia ja auttavata kehittäjiä löytämään ratkaisuja ongelmiin, mutta on tärkeää muistaa, että ne eivät ole täydellisiä ja niiden ehdotuksia tulee aina arvioida kriittisesti. Ohjelmistokehittäjällä on oltava riittävä asiantuntemus ohjelmiston toiminnasta, jotta hän kykenee arvioimaan automaattisesti generoitua koodia ammattimaisesti ja erottamaan tarpeettoman tai virheellisen koodin tarkoituksenmukaisesta.   
+**Oikein käytettynä** tekoälyavustimet nopeuttavat ohjelmointia ja auttavat kehittäjiä löytämään ratkaisuja ongelmiin, mutta on tärkeää muistaa, että ne eivät ole täydellisiä ja niiden ehdotuksia tulee aina arvioida kriittisesti. Ohjelmistokehittäjällä on oltava riittävä asiantuntemus ohjelmiston toiminnasta, jotta hän kykenee arvioimaan automaattisesti generoitua koodia ammattimaisesti ja erottamaan tarpeettoman tai virheellisen koodin tarkoituksenmukaisesta.
 
 **Välttämättömät ohjelmoijan taidot voit oppia vain itse koodaamalla!**
 

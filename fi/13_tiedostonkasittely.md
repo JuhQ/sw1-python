@@ -13,7 +13,7 @@ Tällaisia tietoja voivat olla esimerkiksi:
 - mittausdata
 - ym.
 
-Tallennettava/luettavat tiedosto voi olla pelkkää tekstiä tai jossain binääriformaatissa (kuvat, pdf, doc, jne.). 
+Tallennettava/luettavat tiedosto voi olla pelkkää tekstiä tai jossain binääriformaatissa (kuvat, pdf, doc, jne.).
 
 ## Tekstitiedostoon tallentaminen ja lukeminen
 
@@ -74,7 +74,7 @@ tallennus_data = {
     "varusteet": ["miekka", "kilpi", "haarniska"]
 }
 with open("save.json", "w") as tiedosto:
-    json.dump(tallennus_data, tiedosto)   
+    json.dump(tallennus_data, tiedosto)
 with open("save.json", "r") as tiedosto:
     data_luettu = json.load(tiedosto)
 print(f"Pelaaja: {data_luettu['pelaaja']}, taso: {data_luettu['taso']}, varusteet: {data_luettu['varusteet']}")
@@ -97,7 +97,6 @@ else:
 ```
 
 Yllä olevassa esimerkissä `if`-lauseella varmistetaan, että tiedosto on olemassa ennen sen poistamista, jotta vältetään virhetilanne.
-
 
 ## Virheiden käsittely
 
@@ -125,7 +124,7 @@ except ValueError:
 print("Ohjelman suoritus jatkuu.")
 ```
 
-`try`-koodilohkossa olevaa koodia siis ajetaan niin kauan, kunnes tapahtuu virhe. Virheen tapahtuessa koodin suoritus hyppää heti oikeaan `except`-lohkoon. Jos virhettä ei tapahdu, `except`-lohko(t) sivuutetaan ja ohjelman suoritus jatkuu normaalisti sen jälkeen. 
+`try`-koodilohkossa olevaa koodia siis ajetaan niin kauan, kunnes tapahtuu virhe. Virheen tapahtuessa koodin suoritus hyppää heti oikeaan `except`-lohkoon. Jos virhettä ei tapahdu, `except`-lohko(t) sivuutetaan ja ohjelman suoritus jatkuu normaalisti sen jälkeen.
 
 Jotta pelaajan ikä saadaan luettu onnistuneesti ennen ohjelman jatkamista, voidaan käyttää `while`-silmukkaa, joka toistuu niin kauan, kunnes ikä on saatu luettua onnistuneesti:
 
@@ -138,7 +137,6 @@ while True:
         print("Virhe: syötetty arvo ei ole kokonaisluku. Yritä uudestaan.")
 print(f"Pelaajan ikä on {pelaajan_ika}.")
 ```
-
 
 Tilanteissa, joissa ohjelman suoritus voi mahdollisesti kaatua johonkin varsinaisesta koodista riippumattomaan ajonaikaiseen virheeseen, on tärkeää käyttää virheenkäsittelyä. Muuten ohjelma kaatuu ja sen suoritus loppuu kokonaan siihen.
 

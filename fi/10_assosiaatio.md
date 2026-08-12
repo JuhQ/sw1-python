@@ -51,7 +51,7 @@ classDiagram
 
     class Hoitola {
         +koirat: list[Koira]
-        +__init__() 
+        +__init__()
         +koira_sisään(koira: Koira) None
         +koira_ulos(koira: Koira) None
         +tervehdi_koiria() None
